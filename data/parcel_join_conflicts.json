@@ -1,0 +1,30 @@
+{
+  "summary": {
+    "total_conflict_parcels": 211,
+    "conflict_type": "Both_Individual_and_Collective",
+    "description": "Parcels classified as both individual and collective ownership"
+  },
+  "conflict_parcels": [
+    {"Num_parcel": "0522030300279", "conflict_type": "Both_Individual_and_Collective", "individual_count": 1, "collective_count": 1},
+    {"Num_parcel": "0522030300223", "conflict_type": "Both_Individual_and_Collective", "individual_count": 1, "collective_count": 1},
+    {"Num_parcel": "0522030300266", "conflict_type": "Both_Individual_and_Collective", "individual_count": 1, "collective_count": 1},
+    {"Num_parcel": "0522030300171", "conflict_type": "Both_Individual_and_Collective", "individual_count": 2, "collective_count": 1},
+    {"Num_parcel": "0522030300206", "conflict_type": "Both_Individual_and_Collective", "individual_count": 1, "collective_count": 1},
+    {"Num_parcel": "0522030300254", "conflict_type": "Both_Individual_and_Collective", "individual_count": 1, "collective_count": 1},
+    {"Num_parcel": "0522030300199", "conflict_type": "Both_Individual_and_Collective", "individual_count": 1, "collective_count": 1},
+    {"Num_parcel": "0522030300173", "conflict_type": "Both_Individual_and_Collective", "individual_count": 1, "collective_count": 1},
+    {"Num_parcel": "0522030300182", "conflict_type": "Both_Individual_and_Collective", "individual_count": 1, "collective_count": 1},
+    {"Num_parcel": "0522030300284", "conflict_type": "Both_Individual_and_Collective", "individual_count": 1, "collective_count": 1},
+    {"Num_parcel": "0522030300225", "conflict_type": "Both_Individual_and_Collective", "individual_count": 1, "collective_count": 1},
+    {"Num_parcel": "0522030300233", "conflict_type": "Both_Individual_and_Collective", "individual_count": 1, "collective_count": 1},
+    {"Num_parcel": "0522030300226", "conflict_type": "Both_Individual_and_Collective", "individual_count": 1, "collective_count": 1},
+    {"Num_parcel": "0522030300231", "conflict_type": "Both_Individual_and_Collective", "individual_count": 1, "collective_count": 1},
+    {"Num_parcel": "0522030300212", "conflict_type": "Both_Individual_and_Collective", "individual_count": 2, "collective_count": 1},
+    {"Num_parcel": "0522030300187", "conflict_type": "Both_Individual_and_Collective", "individual_count": 1, "collective_count": 1},
+    {"Num_parcel": "0522030300312", "conflict_type": "Both_Individual_and_Collective", "individual_count": 1, "collective_count": 1},
+    {"Num_parcel": "0522030300255", "conflict_type": "Both_Individual_and_Collective", "individual_count": 1, "collective_count": 1},
+    {"Num_parcel": "0522030300280", "conflict_type": "Both_Individual_and_Collective", "individual_count": 1, "collective_count": 1},
+    {"Num_parcel": "0522030300288", "conflict_type": "Both_Individual_and_Collective", "individual_count": 1, "collective_count": 1}
+  ],
+  "note": "This is a sample of 20 parcels out of 211 total conflict parcels. All conflicted parcels are classified as 'Both_Individual_and_Collective', meaning they appear in both individual and collective parcel datasets, creating ownership ambiguity. The complete list is available in the Parcel_Join_Analysis_Report.csv file."
+}

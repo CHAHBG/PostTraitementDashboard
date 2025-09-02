@@ -1,0 +1,209 @@
+/* Chart Components */
+
+.chart-container {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.chart-tall {
+  height: 400px;
+}
+
+.chart-short {
+  height: 200px;
+}
+
+/* Chart legend */
+.chart-legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  font-size: var(--font-size-sm);
+}
+
+.legend-color {
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  margin-right: 0.5rem;
+}
+
+/* Chart tooltips */
+.chart-tooltip {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--border-radius-sm);
+  font-size: var(--font-size-sm);
+  pointer-events: none;
+  z-index: 10;
+}
+
+.tooltip-label {
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.tooltip-value {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+/* Chart types specific styles */
+
+/* Bar charts */
+.bar-chart .bar {
+  fill: var(--color-primary);
+  transition: opacity 0.2s;
+}
+
+.bar-chart .bar:hover {
+  opacity: 0.8;
+}
+
+.bar-chart .bar-label {
+  fill: var(--color-text);
+  font-size: var(--font-size-xs);
+}
+
+/* Line charts */
+.line-chart .line {
+  fill: none;
+  stroke: var(--color-primary);
+  stroke-width: 2;
+}
+
+.line-chart .area {
+  fill: var(--color-primary);
+  opacity: 0.1;
+}
+
+.line-chart .point {
+  fill: var(--color-primary);
+  stroke: white;
+  stroke-width: 1.5;
+}
+
+.line-chart .point:hover {
+  r: 5;
+}
+
+/* Pie charts */
+.pie-chart .slice {
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.pie-chart .slice:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+}
+
+.pie-chart .slice-label {
+  fill: white;
+  font-size: var(--font-size-xs);
+  font-weight: 500;
+}
+
+/* Axes */
+.axis .domain {
+  stroke: var(--color-border-light);
+}
+
+.axis .tick line {
+  stroke: var(--color-border-light);
+}
+
+.axis text {
+  fill: var(--color-text-secondary);
+  font-size: var(--font-size-xs);
+}
+
+.grid line {
+  stroke: var(--color-border-light);
+  stroke-opacity: 0.4;
+  shape-rendering: crispEdges;
+}
+
+.grid path {
+  stroke-width: 0;
+}
+
+/* Chart loading state */
+.chart-loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+
+/* Chart error state */
+.chart-error {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-danger);
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Responsive charts */
+@media (max-width: 768px) {
+  .chart-container {
+    height: 250px;
+  }
+  
+  .chart-tall {
+    height: 300px;
+  }
+  
+  .chart-legend {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}
+
+/* Chart.js specific overrides */
+.chartjs-tooltip {
+  background-color: var(--color-card-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-sm);
+  box-shadow: var(--shadow-md);
+  padding: 0.5rem;
+  color: var(--color-text);
+}
+
+/* D3.js specific styles */
+.d3-chart .axis-title {
+  fill: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+}
+
+/* Chart annotations */
+.annotation-line {
+  stroke: var(--color-warning);
+  stroke-width: 1;
+  stroke-dasharray: 5, 5;
+}
+
+.annotation-label {
+  fill: var(--color-text-secondary);
+  font-size: var(--font-size-xs);
+}

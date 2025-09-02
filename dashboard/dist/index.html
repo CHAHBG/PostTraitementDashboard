@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Land Management Dashboard</title>
+    <meta name="description" content="Interactive land management dashboard for administrative analysis">
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    
+    <!-- Third-party CSS -->
+    <link rel="stylesheet" href="lib/leaflet/leaflet.css">
+    
+    <!-- Application CSS -->
+    <link rel="stylesheet" href="assets/css/themes/variables.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="assets/js/app.js" as="script">
+</head>
+<body class="theme-light">
+    <div class="app-container">
+        <header class="app-header">
+            <div class="header-logo">
+                <h1>Land Management Dashboard</h1>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-tabs" role="tablist">
+                    <li><a href="#overview" class="tab-link active" data-tab="overview">Executive Overview</a></li>
+                    <li><a href="#mapping" class="tab-link" data-tab="mapping">Interactive Mapping</a></li>
+                    <li><a href="#analytics" class="tab-link" data-tab="analytics">Data Analytics</a></li>
+                    <li><a href="#ai" class="tab-link" data-tab="ai">AI Intelligence</a></li>
+                    <li><a href="#reports" class="tab-link" data-tab="reports">Administrative Reports</a></li>
+                </ul>
+            </nav>
+            <div class="header-controls">
+                <button class="btn theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+                    <span class="icon-light">☀️</span>
+                    <span class="icon-dark">🌙</span>
+                </button>
+            </div>
+        </header>
+
+        <main class="app-content">
+            <!-- Tab 1: Executive Overview -->
+            <section id="overview" class="tab-content active">
+                <div class="dashboard-grid">
+                    <!-- KPI Cards -->
+                    <div class="card-container" id="kpiCards">
+                        <div class="card">
+                            <h3 class="card-title">Total Parcels</h3>
+                            <div class="card-value counter" data-target="36292">0</div>
+                        </div>
+                        <div class="card">
+                            <h3 class="card-title">Communes</h3>
+                            <div class="card-value counter" data-target="17">0</div>
+                        </div>
+                        <div class="card">
+                            <h3 class="card-title">Data Quality</h3>
+                            <div class="card-value">98<span class="unit">%</span></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Mini Map -->
+                    <div class="card map-card">
+                        <h3 class="card-title">Commune Overview</h3>
+                        <div id="overviewMap" class="mini-map"></div>
+                    </div>
+                    
+                    <!-- Alerts Panel -->
+                    <div class="card alerts-card">
+                        <h3 class="card-title">System Alerts</h3>
+                        <ul class="alerts-list" id="alertsList">
+                            <li class="alert-item loading">Loading alerts...</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tab 2: Interactive Mapping -->
+            <section id="mapping" class="tab-content">
+                <div class="map-container">
+                    <div id="mainMap" class="main-map"></div>
+                    <div class="map-controls">
+                        <div class="layer-control">
+                            <h3>Map Layers</h3>
+                            <div class="layer-toggles" id="layerToggles">
+                                <label class="toggle">
+                                    <input type="checkbox" id="communeLayer" checked>
+                                    <span class="toggle-label">Communes</span>
+                                </label>
+                                <label class="toggle">
+                                    <input type="checkbox" id="parcelLayer" checked>
+                                    <span class="toggle-label">Parcels</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="search-control">
+                            <input type="text" id="parcelSearch" placeholder="Search by Parcel ID...">
+                            <button id="searchBtn" class="btn search-btn">Search</button>
+                        </div>
+                    </div>
+                    <div class="map-info-panel" id="mapInfoPanel">
+                        <h3>Parcel Information</h3>
+                        <div id="parcelInfo">Select a parcel on the map</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tab 3: Data Analytics -->
+            <section id="analytics" class="tab-content">
+                <div class="analytics-container">
+                    <!-- Charts Row -->
+                    <div class="charts-row">
+                        <div class="card">
+                            <h3 class="card-title">Parcels by Commune</h3>
+                            <canvas id="parcelsByCommuneChart" class="chart"></canvas>
+                        </div>
+                        <div class="card">
+                            <h3 class="card-title">Data Distribution</h3>
+                            <div id="dataDistributionChart" class="d3-chart"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Data Table -->
+                    <div class="card table-card">
+                        <h3 class="card-title">Commune Statistics</h3>
+                        <div class="table-container">
+                            <table id="communeTable" class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>Commune</th>
+                                        <th>Parcels</th>
+                                        <th>Data Quality</th>
+                                        <th>Last Updated</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="4" class="loading-row">Loading data...</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tab 4: AI Intelligence -->
+            <section id="ai" class="tab-content">
+                <div class="ai-container">
+                    <div class="card query-card">
+                        <h3 class="card-title">Ask AI Assistant</h3>
+                        <div class="query-form">
+                            <textarea id="aiQuery" placeholder="Ask a question about land management data..."></textarea>
+                            <button id="queryBtn" class="btn query-btn">Submit Query</button>
+                        </div>
+                    </div>
+                    
+                    <div class="card ai-response-card">
+                        <h3 class="card-title">AI Insights</h3>
+                        <div id="aiResponse" class="ai-response">
+                            <p class="placeholder-text">Submit a query to see AI-powered insights</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card ai-viz-card">
+                        <h3 class="card-title">AI-Generated Visualization</h3>
+                        <div id="aiViz" class="ai-visualization">
+                            <!-- Visualization will be inserted here -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tab 5: Administrative Reports -->
+            <section id="reports" class="tab-content">
+                <div class="reports-container">
+                    <div class="reports-sidebar">
+                        <h3>Available Reports</h3>
+                        <ul class="report-list" id="reportList">
+                            <li data-report="commune-extraction">Commune Extraction Report</li>
+                            <li data-report="commune-standardization">Commune Standardization Report</li>
+                            <li data-report="jointure">Rapport Jointure</li>
+                            <li data-report="post-traitement">Rapport Post-traitement</li>
+                        </ul>
+                        <div class="export-controls">
+                            <button id="exportCsv" class="btn">Export CSV</button>
+                            <button id="exportPdf" class="btn">Export PDF</button>
+                        </div>
+                    </div>
+                    
+                    <div class="report-content">
+                        <div class="card report-card">
+                            <h3 id="reportTitle" class="card-title">Select a report</h3>
+                            <div id="reportContent" class="report-body">
+                                <p class="placeholder-text">Select a report from the list to view details</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="app-footer">
+            <p>&copy; 2025 Land Management Dashboard | <a href="#" class="js-open-about">About</a></p>
+        </footer>
+    </div>
+    
+    <!-- Modal component -->
+    <div class="modal" id="aboutModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>About Land Management Dashboard</h2>
+            <p>This dashboard provides tools for land management and administrative analysis. Built with HTML, CSS, and JavaScript.</p>
+        </div>
+    </div>
+
+    <!-- Third-party libraries -->
+    <script src="lib/leaflet/leaflet.js" defer></script>
+    <script src="lib/d3/d3.min.js" defer></script>
+    <script src="lib/chart.js/chart.min.js" defer></script>
+    
+    <!-- Application JS -->
+    <script type="module" src="assets/js/app.js"></script>
+</body>
+</html>

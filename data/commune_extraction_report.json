@@ -1,0 +1,109 @@
+{
+  "files": [
+    {
+      "input": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\geojson\\parcels\\collective_parcels.normalized.geojson",
+      "output": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\geojson\\parcels\\collective_parcels.normalized.source_commune.geojson",
+      "total_features": 5820,
+      "updated": 0,
+      "samples": []
+    },
+    {
+      "input": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\geojson\\parcels\\individual_parcels.normalized.geojson",
+      "output": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\geojson\\parcels\\individual_parcels.normalized.source_commune.geojson",
+      "total_features": 28422,
+      "updated": 0,
+      "samples": []
+    },
+    {
+      "input": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\geojson\\parcels\\unjoined_parcels.normalized.geojson",
+      "output": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\geojson\\parcels\\unjoined_parcels.normalized.source_commune.geojson",
+      "total_features": 7467,
+      "updated": 0,
+      "samples": []
+    },
+    {
+      "input": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\geojson\\parcels\\collective_parcels.geojson",
+      "output": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\geojson\\parcels\\collective_parcels.source_commune.geojson",
+      "total_features": 5820,
+      "updated": 5820,
+      "samples": [
+        {
+          "source_file": "DIMBOLI_LineStringZ",
+          "commune": "DIMBOLI"
+        },
+        {
+          "source_file": "DIMBOLI_LineStringZ",
+          "commune": "DIMBOLI"
+        },
+        {
+          "source_file": "DIMBOLI_LineStringZ",
+          "commune": "DIMBOLI"
+        },
+        {
+          "source_file": "DIMBOLI_LineStringZ",
+          "commune": "DIMBOLI"
+        },
+        {
+          "source_file": "DIMBOLI_LineStringZ",
+          "commune": "DIMBOLI"
+        }
+      ]
+    },
+    {
+      "input": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\geojson\\parcels\\individual_parcels.geojson",
+      "output": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\geojson\\parcels\\individual_parcels.source_commune.geojson",
+      "total_features": 28422,
+      "updated": 28422,
+      "samples": [
+        {
+          "source_file": "TOMBORONKOTO_LineStringZ",
+          "commune": "TOMBORONKOTO"
+        },
+        {
+          "source_file": "TOMBORONKOTO_LineStringZ",
+          "commune": "TOMBORONKOTO"
+        },
+        {
+          "source_file": "TOMBORONKOTO_LineStringZ",
+          "commune": "TOMBORONKOTO"
+        },
+        {
+          "source_file": "TOMBORONKOTO_LineStringZ",
+          "commune": "TOMBORONKOTO"
+        },
+        {
+          "source_file": "TOMBORONKOTO_LineStringZ",
+          "commune": "TOMBORONKOTO"
+        }
+      ]
+    },
+    {
+      "input": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\geojson\\parcels\\unjoined_parcels.geojson",
+      "output": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\geojson\\parcels\\unjoined_parcels.source_commune.geojson",
+      "total_features": 7467,
+      "updated": 7467,
+      "samples": [
+        {
+          "source_file": "SINTHIOU_MALEME_LineStringZ",
+          "commune": "SINTHIOU MALEME"
+        },
+        {
+          "source_file": "SINTHIOU_MALEME_LineStringZ",
+          "commune": "SINTHIOU MALEME"
+        },
+        {
+          "source_file": "SINTHIOU_MALEME_LineStringZ",
+          "commune": "SINTHIOU MALEME"
+        },
+        {
+          "source_file": "SINTHIOU_MALEME_LineStringZ",
+          "commune": "SINTHIOU MALEME"
+        },
+        {
+          "source_file": "SINTHIOU_MALEME_LineStringZ",
+          "commune": "SINTHIOU MALEME"
+        }
+      ]
+    }
+  ]
+}

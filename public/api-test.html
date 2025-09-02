@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Land Management API Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.5;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .card {
+            flex: 1;
+            min-width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        input, button, select {
+            padding: 8px;
+            margin-right: 8px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        pre {
+            background-color: #f5f5f5;
+            padding: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        .error {
+            color: red;
+        }
+        .communes-list {
+            height: 200px;
+            overflow-y: auto;
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .commune-item {
+            padding: 5px;
+            cursor: pointer;
+            border-bottom: 1px solid #eee;
+        }
+        .commune-item:hover {
+            background-color: #f5f5f5;
+        }
+        .alternate-spellings {
+            font-size: 0.8em;
+            color: #666;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Land Management API Test</h1>
+    
+    <div class="container">
+        <!-- Parcel Lookup -->
+        <div class="card">
+            <h2>Parcel Lookup</h2>
+            <div>
+                <input type="text" id="parcelId" placeholder="Enter Parcel ID">
+                <button onclick="lookupParcel()">Lookup</button>
+            </div>
+            <div>
+                <h3>Result:</h3>
+                <pre id="parcelResult">No data yet</pre>
+            </div>
+        </div>
+
+        <!-- Commune Lookup -->
+        <div class="card">
+            <h2>Commune Lookup</h2>
+            <div>
+                <h3>All Communes:</h3>
+                <div class="communes-list" id="communesList">Loading communes...</div>
+                <div>
+                    <input type="text" id="communeName" placeholder="Enter Commune Name">
+                    <button onclick="lookupCommune()">Lookup</button>
+                </div>
+                <h3>Result:</h3>
+                <pre id="communeResult">No data yet</pre>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // API base URL
+        const API_BASE = 'http://localhost:3001/api';
+        let communes = [];
+
+        // Load communes on page load
+        window.onload = async () => {
+            try {
+                const response = await fetch(`${API_BASE}/communes`);
+                const data = await response.json();
+                communes = data.communes || [];
+                
+                const communesListEl = document.getElementById('communesList');
+                if (communes.length === 0) {
+                    communesListEl.innerHTML = '<div class="error">No communes found</div>';
+                    return;
+                }
+
+                communesListEl.innerHTML = communes.map(c => {
+                    // Highlight communes with no parcels to make them stand out
+                    const hasNoParcels = c.count === 0;
+                    const style = hasNoParcels ? 'color: #999; font-style: italic;' : '';
+                    const countText = hasNoParcels ? 'No parcels' : `${c.count} parcels`;
+                    
+                    // Show alternate spellings if they exist
+                    const alternateSpellingsHtml = c.alternateSpellings ? 
+                        `<div class="alternate-spellings">Also known as: ${c.alternateSpellings.join(', ')}</div>` : '';
+                    
+                    return `<div class="commune-item" onclick="selectCommune('${c.name}')" style="${style}">
+                        <strong>${c.name}</strong> (${countText})
+                        ${alternateSpellingsHtml}
+                    </div>`;
+                }).join('');
+            } catch (err) {
+                document.getElementById('communesList').innerHTML = 
+                    `<div class="error">Error loading communes: ${err.message}</div>`;
+            }
+        };
+
+        // Select commune from the list
+        function selectCommune(name) {
+            document.getElementById('communeName').value = name;
+            lookupCommune();
+        }
+
+        // Lookup a parcel by ID
+        async function lookupParcel() {
+            const parcelId = document.getElementById('parcelId').value.trim();
+            const resultEl = document.getElementById('parcelResult');
+            
+            if (!parcelId) {
+                resultEl.innerHTML = '<span class="error">Please enter a parcel ID</span>';
+                return;
+            }
+            
+            resultEl.innerHTML = 'Loading...';
+            
+            try {
+                const response = await fetch(`${API_BASE}/parcels/${parcelId}`);
+                const data = await response.json();
+                
+                resultEl.innerHTML = JSON.stringify(data, null, 2);
+            } catch (err) {
+                resultEl.innerHTML = `<span class="error">Error: ${err.message}</span>`;
+            }
+        }
+
+        // Lookup a commune by name
+        async function lookupCommune() {
+            const communeName = document.getElementById('communeName').value.trim();
+            const resultEl = document.getElementById('communeResult');
+            
+            if (!communeName) {
+                resultEl.innerHTML = '<span class="error">Please enter a commune name</span>';
+                return;
+            }
+            
+            resultEl.innerHTML = 'Loading...';
+            
+            try {
+                const response = await fetch(`${API_BASE}/communes/${encodeURIComponent(communeName)}`);
+                const data = await response.json();
+                
+                resultEl.innerHTML = JSON.stringify(data, null, 2);
+            } catch (err) {
+                resultEl.innerHTML = `<span class="error">Error: ${err.message}</span>`;
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+{
+  "individual_parcels_loaded": 33611,
+  "collective_parcels_loaded": 8662,
+  "conflict_analysis": {
+    "unique_individual_parcels": 33261,
+    "unique_collective_parcels": 8571,
+    "conflicted_parcels": 211,
+    "sample_conflicted_parcels": [
+      "0522030300279", "0522030300223", "0522030300266", "0522030300171", "0522030300206",
+      "0522030300254", "0522030300199", "0522030300173", "0522030300182", "0522030300284"
+    ],
+    "only_individual_parcels": 33050,
+    "only_collective_parcels": 8360
+  },
+  "polygon_files_processing": [
+    {"polygon_file": "BALA_LineStringZ", "polygon_features": 1190, "individual_joins": 959, "collective_joins": 155, "unjoined_polygons": 81},
+    {"polygon_file": "BALLOU_LineStringZ", "polygon_features": 1366, "individual_joins": 358, "collective_joins": 275, "unjoined_polygons": 734},
+    {"polygon_file": "BANDAFASSI_LineStringZ", "polygon_features": 3506, "individual_joins": 2735, "collective_joins": 753, "unjoined_polygons": 85},
+    {"polygon_file": "BEMBOU_LineStringZ", "polygon_features": 1992, "individual_joins": 1552, "collective_joins": 414, "unjoined_polygons": 39},
+    {"polygon_file": "DIMBOLI_LineStringZ", "polygon_features": 2950, "individual_joins": 2401, "collective_joins": 412, "unjoined_polygons": 147},
+    {"polygon_file": "DINDEFELLO_LineStringZ", "polygon_features": 1766, "individual_joins": 1496, "collective_joins": 259, "unjoined_polygons": 32},
+    {"polygon_file": "FONGOLEMBI_LineStringZ", "polygon_features": 1429, "individual_joins": 875, "collective_joins": 545, "unjoined_polygons": 22},
+    {"polygon_file": "GABOU_LineStringZ", "polygon_features": 1581, "individual_joins": 600, "collective_joins": 298, "unjoined_polygons": 683},
+    {"polygon_file": "KOAR_LineStringZ", "polygon_features": 98, "individual_joins": 58, "collective_joins": 30, "unjoined_polygons": 10},
+    {"polygon_file": "MISSIRAH_LineStringZ", "polygon_features": 6580, "individual_joins": 4216, "collective_joins": 909, "unjoined_polygons": 1557},
+    {"polygon_file": "MOUDERY_LineStringZ", "polygon_features": 1049, "individual_joins": 458, "collective_joins": 336, "unjoined_polygons": 259},
+    {"polygon_file": "NDOGA_BABACAR_LineStringZ", "polygon_features": 1272, "individual_joins": 60, "collective_joins": 15, "unjoined_polygons": 1197},
+    {"polygon_file": "NETTEBOULOU_LineStringZ", "polygon_features": 3272, "individual_joins": 1140, "collective_joins": 677, "unjoined_polygons": 1576},
+    {"polygon_file": "SINTHIOU_MALEME_LineStringZ", "polygon_features": 4606, "individual_joins": 3535, "collective_joins": 242, "unjoined_polygons": 855},
+    {"polygon_file": "TOMBORONKOTO_LineStringZ", "polygon_features": 8933, "individual_joins": 8235, "collective_joins": 549, "unjoined_polygons": 198}
+  ],
+  "final_analysis_report": {
+    "input_files": {
+      "individual_excel": "Enquete_Foncière-Parcelles_Individuelles_30082025.xlsx",
+      "collective_excel": "Enquete_Foncière-Parcelles_Collectives_30082025.xlsx",
+      "polygon_files": 15
+    },
+    "output_folder": "C:/Users/USER/Documents/Raw_Data/Levés topo-enquetes/Final_Analysis_Results",
+    "parcel_analysis": {
+      "total_unique_individual_parcels": 33261,
+      "total_unique_collective_parcels": 8571,
+      "conflicted_parcels": 211,
+      "only_individual_parcels": 33050,
+      "only_collective_parcels": 8360
+    },
+    "join_results": {
+      "individual_joins": 28678,
+      "collective_joins": 5869,
+      "unjoined_polygons": 7475
+    },
+    "output_files_created": {
+      "excel_report": "Parcel_Join_Analysis_Report.xlsx",
+      "individual_joined": "*_individual_joined.gpkg",
+      "collective_joined": "*_collective_joined.gpkg",
+      "unjoined_polygons": "*_unjoined.gpkg"
+    },
+    "conflict_warning": "Found 211 parcels that are BOTH individual and collective! These conflicts are detailed in the Excel report."
+  }
+}

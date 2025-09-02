@@ -1,0 +1,25 @@
+# Netlify Configuration File
+
+# Set cache headers for static assets
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Set cache headers for data files
+[[headers]]
+  for = "/data/*"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+
+# Set cache headers for geojson files
+[[headers]]
+  for = "/geojson/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+
+# Handle SPA routing - direct all requests to index.html
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
