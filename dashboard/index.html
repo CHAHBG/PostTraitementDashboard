@@ -219,13 +219,34 @@
                 <!-- Sequential loader: load libraries in order then bootstrap the app module -->
                 <script>
                     (function(){
-                        function loadScript(src, onload, onerror) {
-                            var s = document.createElement('script');
-                            s.src = src;
-                            s.onload = onload || function(){};
-                            s.onerror = function() { if (onerror) onerror(); };
-                            document.head.appendChild(s);
-                        }
+                                    function loadScript(src, onload, onerror) {
+                                        // Fetch first to detect HTML fallbacks (index.html) that return 200 with HTML
+                                        // which would otherwise execute and cause a SyntaxError ('<' token).
+                                        fetch(src, { cache: 'no-store' }).then(function(resp){
+                                            if (!resp.ok) throw new Error('fetch-failed');
+                                            return resp.text();
+                                        }).then(function(text){
+                                            var trimmed = (text || '').trim();
+                                            // If server returned HTML (spa redirect), treat as failure so onerror fallback runs
+                                            if (trimmed.startsWith('<')) throw new Error('html-response');
+                                            // Create a blob URL so the script executes in correct origin and we can control it
+                                            var blob = new Blob([text], { type: 'application/javascript' });
+                                            var url = URL.createObjectURL(blob);
+                                            var s = document.createElement('script');
+                                            s.src = url;
+                                            s.onload = function(){ URL.revokeObjectURL(url); if (onload) onload(); };
+                                            s.onerror = function(){ URL.revokeObjectURL(url); if (onerror) onerror(); };
+                                            document.head.appendChild(s);
+                                        }).catch(function(){
+                                            // If fetch failed or content was HTML, try attaching the script tag which will
+                                            // trigger a normal onerror (useful for cross-origin CDN fallback attempts).
+                                            var s = document.createElement('script');
+                                            s.src = src;
+                                            s.onload = onload || function(){};
+                                            s.onerror = function(){ if (onerror) onerror(); };
+                                            document.head.appendChild(s);
+                                        });
+                                    }
 
                         function loadLink(href) {
                             var l = document.createElement('link');

@@ -4,7 +4,7 @@
   # (we use shell `|| true` to avoid failing the build on images without git-lfs).
   # If git-lfs is present, this ensures pointer files are replaced with real objects
   # before running the site build script.
-  command = "git lfs fetch --all || true && git lfs checkout || true && node scripts/build-netlify.js"
+  command = "npm ci --silent && (git lfs fetch --all || true) && (git lfs checkout || true) && node scripts/build-netlify.js"
   publish = "dist"
 
 [context.production.environment]
