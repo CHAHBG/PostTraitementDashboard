@@ -216,12 +216,32 @@
         </div>
     </div>
 
-    <!-- Third-party libraries (root-relative paths) -->
-    <script src="/lib/leaflet/leaflet.js" defer></script>
-    <script src="/lib/d3/d3.min.js" defer></script>
-    <script src="/lib/chart.js/chart.min.js" defer></script>
-    
-    <!-- Application JS -->
-    <script type="module" src="/assets/js/app.js"></script>
+        <!-- Third-party libraries: load from CDN if global object missing (fallback to local files present in dist/) -->
+        <script>
+            // Leaflet
+            if (!window.L) {
+                var s = document.createElement('script');
+                s.src = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';
+                s.crossOrigin = '';
+                document.head.appendChild(s);
+            }
+
+            // D3
+            if (!window.d3) {
+                var s2 = document.createElement('script');
+                s2.src = 'https://unpkg.com/d3@7/dist/d3.min.js';
+                document.head.appendChild(s2);
+            }
+
+            // Chart.js
+            if (!window.Chart) {
+                var s3 = document.createElement('script');
+                s3.src = 'https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js';
+                document.head.appendChild(s3);
+            }
+        </script>
+
+        <!-- Application JS -->
+        <script type="module" src="/assets/js/app.js"></script>
 </body>
 </html>

@@ -15,6 +15,7 @@ import { initModalSystem } from './components/modal.js';
 
 // API service
 import { ApiService } from './services/api.js';
+import { config } from './config.js';
 
 // Store for global state management
 import { store } from './services/store.js';
@@ -31,9 +32,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     initTabNavigation();
     initModalSystem();
     
-    // Initialize API service
+    // Initialize API service using environment-aware config
     const api = new ApiService({
-      baseUrl: 'http://localhost:3001/api'
+      baseUrl: config.api.baseUrl || undefined,
+      useDirectFileAccess: config.api.useDirectFileAccess
     });
     
     // Register API in store for global access
