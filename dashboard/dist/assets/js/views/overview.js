@@ -4,6 +4,7 @@
  */
 
 import { store } from '../services/store.js';
+import { config } from '../config.js';
 
 // Map instance
 let overviewMap = null;
@@ -37,14 +38,60 @@ export function initOverviewTab() {
  * Initialize animated counters
  */
 function initCounters() {
-  const counters = document.querySelectorAll('.counter');
-  
-  counters.forEach(counter => {
-    const target = parseInt(counter.getAttribute('data-target'), 10);
-    
-    // Animate from 0 to target value
-    animateCounter(counter, 0, target, 1500);
-  });
+  // Try to load KPI values from the dashboard_kpis.json when available
+  const kpiPath = config.paths.dashboardKpis || 'data/dashboard_kpis.json';
+
+  fetch(kpiPath)
+    .then(resp => resp.json())
+    .then(kpis => {
+      try {
+        const summary = kpis.kpi_summary || {};
+
+        // Map known counters by element data-target keys or IDs
+        const totalParcelsEl = document.querySelector('[data-target]');
+        const communeCountEl = document.querySelector('#kpiCards .card-container .card .card-value.counter[data-target]') || null;
+
+        // Use available KPI values to populate counters
+        const total = summary.total_parcels?.value ?? null;
+        const communes = store.get('communes') ? store.get('communes').length : null;
+        const quality = summary.data_quality?.value ?? null;
+
+        // Find elements by known selectors
+        const totalEl = document.querySelector('.card-container .card .card-value.counter[data-target]');
+        const communeEl = document.querySelector('.card-container .card:nth-child(2) .card-value.counter');
+        const qualityEl = document.querySelector('.card-container .card:nth-child(3) .card-value');
+
+        if (totalEl && total !== null) {
+          totalEl.setAttribute('data-target', total);
+          animateCounter(totalEl, 0, total, 1200);
+        }
+
+        if (communeEl && communes !== null) {
+          communeEl.setAttribute('data-target', communes);
+          animateCounter(communeEl, 0, communes, 800);
+        }
+
+        if (qualityEl && quality !== null) {
+          qualityEl.innerHTML = `${quality} <span class="unit">%</span>`;
+        }
+      } catch (err) {
+        console.warn('Failed to apply KPI values from dashboard_kpis.json', err);
+        // fallback to static counters in markup
+        const counters = document.querySelectorAll('.counter');
+        counters.forEach(counter => {
+          const target = parseInt(counter.getAttribute('data-target'), 10);
+          animateCounter(counter, 0, target, 1500);
+        });
+      }
+    })
+    .catch(() => {
+      // If the KPI file isn't available, fall back to static counters
+      const counters = document.querySelectorAll('.counter');
+      counters.forEach(counter => {
+        const target = parseInt(counter.getAttribute('data-target'), 10);
+        animateCounter(counter, 0, target, 1500);
+      });
+    });
 }
 
 /**

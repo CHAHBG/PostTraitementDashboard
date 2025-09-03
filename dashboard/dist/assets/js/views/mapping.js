@@ -163,7 +163,15 @@ async function loadParcelLayer() {
     for (const filePath of parcelFiles) {
       try {
         const response = await fetch(filePath);
-        const geojsonData = await response.json();
+        // detect Git LFS pointer files (they start with 'version https://git-lfs.github.com/spec/v1')
+        const text = await response.text();
+        if (text && text.startsWith('version https://git-lfs.github.com/spec/v1')) {
+          console.warn(`Parcel file ${filePath} appears to be a Git LFS pointer (not the real GeoJSON).`);
+          showMapError(`Parcel data ${filePath} unavailable (LFS pointer). Please host large geojson files in public storage or enable LFS on the deploy target.`);
+          // Skip this file
+          continue;
+        }
+        const geojsonData = JSON.parse(text);
         
         // Create a layer but don't add directly to map - add to cluster
         parcelLayer = L.geoJSON(geojsonData, {
