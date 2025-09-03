@@ -1,0 +1,12 @@
+[build]
+  # Try to fetch Git LFS objects during the Netlify build. If git-lfs isn't
+  # available in the build image, the fetch/checkout commands will be ignored
+  # (we use shell `|| true` to avoid failing the build on images without git-lfs).
+  # If git-lfs is present, this ensures pointer files are replaced with real objects
+  # before running the site build script.
+  command = "git lfs fetch --all || true && git lfs checkout || true && node scripts/build-netlify.js"
+  publish = "dist"
+
+[context.production.environment]
+# Optional: allow LFS smudge during build if supported by the image
+GIT_LFS_SKIP_SMUDGE = "0"

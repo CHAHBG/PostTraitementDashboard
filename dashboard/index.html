@@ -216,49 +216,98 @@
         </div>
     </div>
 
-        <!-- Third-party libraries: load from CDN if global object missing (fallback to local files present in dist/) -->
-        <script>
-            // Leaflet
-            if (!window.L) {
-                var s = document.createElement('script');
-                s.src = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';
-                s.crossOrigin = '';
-                document.head.appendChild(s);
-            }
+                <!-- Sequential loader: load libraries in order then bootstrap the app module -->
+                <script>
+                    (function(){
+                        function loadScript(src, onload, onerror) {
+                            var s = document.createElement('script');
+                            s.src = src;
+                            s.onload = onload || function(){};
+                            s.onerror = function() { if (onerror) onerror(); };
+                            document.head.appendChild(s);
+                        }
 
-                    // Leaflet.markercluster (plugin) - required for clustering
-                    if (!window.L || !window.L.MarkerClusterGroup) {
-                        var mcCss = document.createElement('link');
-                        mcCss.rel = 'stylesheet';
-                        mcCss.href = 'https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css';
-                        document.head.appendChild(mcCss);
+                        function loadLink(href) {
+                            var l = document.createElement('link');
+                            l.rel = 'stylesheet';
+                            l.href = href;
+                            document.head.appendChild(l);
+                        }
 
-                        var mcCss2 = document.createElement('link');
-                        mcCss2.rel = 'stylesheet';
-                        mcCss2.href = 'https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css';
-                        document.head.appendChild(mcCss2);
+                        // CDN and local fallbacks
+                        var libs = {
+                            leaflet: {
+                                local: '/lib/leaflet/leaflet.js',
+                                cdn: 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js',
+                                cssLocal: '/lib/leaflet/leaflet.css',
+                                cssCdn: 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css'
+                            },
+                            markercluster: {
+                                local: '/lib/leaflet.markercluster/leaflet.markercluster.js',
+                                cdn: 'https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js',
+                                css1: 'https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css',
+                                css2: 'https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css'
+                            },
+                            d3: {
+                                local: '/lib/d3/d3.min.js',
+                                cdn: 'https://unpkg.com/d3@7/dist/d3.min.js'
+                            },
+                            chart: {
+                                local: '/lib/chart.js/chart.min.js',
+                                cdn: 'https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js'
+                            }
+                        };
 
-                        var mc = document.createElement('script');
-                        mc.src = 'https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js';
-                        document.head.appendChild(mc);
-                    }
+                        // Load Leaflet CSS (prefer local, fallback to CDN)
+                        (function(){
+                            var link = document.querySelector('link[href="/lib/leaflet/leaflet.css"]');
+                            if (!link) {
+                                // try local
+                                var img = new Image();
+                                img.onerror = function(){ loadLink(libs.leaflet.cssCdn); };
+                                img.onload = function(){ loadLink(libs.leaflet.cssLocal); };
+                                img.src = libs.leaflet.cssLocal;
+                            }
+                        })();
 
-            // D3
-            if (!window.d3) {
-                var s2 = document.createElement('script');
-                s2.src = 'https://unpkg.com/d3@7/dist/d3.min.js';
-                document.head.appendChild(s2);
-            }
+                        // Start loading scripts in sequence with fallbacks
+                        function loadLeafletThenPlugins() {
+                            // Try local leaflet first, fallback to CDN on error
+                            loadScript(libs.leaflet.local, function(){
+                                // on success, continue to MarkerCluster
+                                loadMarkerCluster();
+                            }, function(){
+                                loadScript(libs.leaflet.cdn, function(){ loadMarkerCluster(); }, function(){ console.error('Failed to load Leaflet from local and CDN'); bootApp(); });
+                            });
+                        }
 
-            // Chart.js
-            if (!window.Chart) {
-                var s3 = document.createElement('script');
-                s3.src = 'https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js';
-                document.head.appendChild(s3);
-            }
-        </script>
+                        function loadMarkerCluster(){
+                            // add cluster CSS from CDN (safe)
+                            loadLink(libs.markercluster.css1);
+                            loadLink(libs.markercluster.css2);
+                            // try local then CDN
+                            loadScript(libs.markercluster.local, function(){ loadD3(); }, function(){ loadScript(libs.markercluster.cdn, function(){ loadD3(); }, function(){ console.warn('MarkerCluster not available'); loadD3(); }); });
+                        }
 
-        <!-- Application JS -->
-        <script type="module" src="/assets/js/app.js"></script>
+                        function loadD3(){
+                            loadScript(libs.d3.local, function(){ loadChart(); }, function(){ loadScript(libs.d3.cdn, function(){ loadChart(); }, function(){ console.warn('D3 not available'); loadChart(); }); });
+                        }
+
+                        function loadChart(){
+                            loadScript(libs.chart.local, function(){ bootApp(); }, function(){ loadScript(libs.chart.cdn, function(){ bootApp(); }, function(){ console.warn('Chart.js not available'); bootApp(); }); });
+                        }
+
+                        function bootApp(){
+                            // finally load the module app
+                            var m = document.createElement('script');
+                            m.type = 'module';
+                            m.src = '/assets/js/app.js';
+                            document.body.appendChild(m);
+                        }
+
+                        // kick off
+                        loadLeafletThenPlugins();
+                    })();
+                </script>
 </body>
 </html>
