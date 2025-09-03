@@ -1,0 +1,102 @@
+{
+  "timestamp": "2025-08-19 09:43:43",
+  "summary": {
+    "total_files_processed": 15,
+    "successfully_processed": 15,
+    "files_with_errors": 0,
+    "files_with_duplicates": 15,
+    "total_original_records": 43110,
+    "total_cleaned_records": 38830,
+    "total_removed_records": 4280,
+    "duplicate_removal_rate": 9.93,
+    "output_folder": "C:/Users/USER/Documents/Raw_Data/Levés topo-enquetes/Données brutes en polygone/POLYGONES/NETTOYE"
+  },
+  "file_results": [
+    {
+      "file": "BALA_SANS_DOUBLON.gpkg",
+      "original_records": 911,
+      "cleaned_records": 878,
+      "removed_records": 33,
+      "removal_rate": 3.62,
+      "major_duplicate_values": ["0532010101662 (22 occurrences)"]
+    },
+    {
+      "file": "BALLOU_SANS_DOUBLON.gpkg",
+      "original_records": 1417,
+      "cleaned_records": 1397,
+      "removed_records": 20,
+      "removal_rate": 1.41
+    },
+    {
+      "file": "BANDAFASSI_SANS_DOUBLON.gpkg",
+      "original_records": 3900,
+      "cleaned_records": 3531,
+      "removed_records": 369,
+      "removal_rate": 9.46
+    },
+    {
+      "file": "BEMBOU_SANS_DOUBLON.gpkg",
+      "original_records": 2083,
+      "cleaned_records": 1992,
+      "removed_records": 91,
+      "removal_rate": 4.37
+    },
+    {
+      "file": "DIMBOLI_SANS_DOUBLON.gpkg",
+      "original_records": 3268,
+      "cleaned_records": 3049,
+      "removed_records": 219,
+      "removal_rate": 6.70
+    }
+  ],
+  "log_entries": [
+    {"timestamp": "2025-08-19 09:43:41,608", "level": "INFO", "message": "Output folder: C:/Users/USER/Documents/Raw_Data/Levés topo-enquetes/Données brutes en polygone/POLYGONES/NETTOYE"},
+    {"timestamp": "2025-08-19 09:43:41,609", "level": "INFO", "message": "Found 15 geopackage files"},
+    {"timestamp": "2025-08-19 09:43:41,609", "level": "INFO", "message": "Processing: BALA_SANS_DOUBLON.gpkg"},
+    {"timestamp": "2025-08-19 09:43:41,725", "level": "INFO", "message": "Created 878 records"},
+    {"timestamp": "2025-08-19 09:43:41,731", "level": "INFO", "message": "Removed 33 duplicate records from BALA_SANS_DOUBLON.gpkg"},
+    {"timestamp": "2025-08-19 09:43:41,731", "level": "INFO", "message": "Processing: BALLOU_SANS_DOUBLON.gpkg"},
+    {"timestamp": "2025-08-19 09:43:41,756", "level": "INFO", "message": "Created 1,397 records"},
+    {"timestamp": "2025-08-19 09:43:41,762", "level": "INFO", "message": "Removed 20 duplicate records from BALLOU_SANS_DOUBLON.gpkg"},
+    {"timestamp": "2025-08-19 09:43:41,762", "level": "INFO", "message": "Processing: BANDAFASSI_SANS_DOUBLON.gpkg"},
+    {"timestamp": "2025-08-19 09:43:41,920", "level": "INFO", "message": "Created 3,531 records"},
+    {"timestamp": "2025-08-19 09:43:41,930", "level": "INFO", "message": "Removed 369 duplicate records from BANDAFASSI_SANS_DOUBLON.gpkg"},
+    {"timestamp": "2025-08-19 09:43:41,930", "level": "INFO", "message": "Processing: BEMBOU_SANS_DOUBLON.gpkg"},
+    {"timestamp": "2025-08-19 09:43:41,975", "level": "INFO", "message": "Created 1,992 records"},
+    {"timestamp": "2025-08-19 09:43:41,982", "level": "INFO", "message": "Removed 91 duplicate records from BEMBOU_SANS_DOUBLON.gpkg"},
+    {"timestamp": "2025-08-19 09:43:41,982", "level": "INFO", "message": "Processing: DIMBOLI_SANS_DOUBLON.gpkg"},
+    {"timestamp": "2025-08-19 09:43:42,091", "level": "INFO", "message": "Created 3,049 records"},
+    {"timestamp": "2025-08-19 09:43:42,099", "level": "INFO", "message": "Removed 219 duplicate records from DIMBOLI_SANS_DOUBLON.gpkg"},
+    {"timestamp": "2025-08-19 09:43:42,099", "level": "INFO", "message": "Processing: DINDEFELLO_SANS_DOUBLON.gpkg"},
+    {"timestamp": "2025-08-19 09:43:42,140", "level": "INFO", "message": "Created 1,773 records"},
+    {"timestamp": "2025-08-19 09:43:42,148", "level": "INFO", "message": "Removed 72 duplicate records from DINDEFELLO_SANS_DOUBLON.gpkg"},
+    {"timestamp": "2025-08-19 09:43:42,148", "level": "INFO", "message": "Processing: FONGOLEMBI_SANS_DOUBLON.gpkg"},
+    {"timestamp": "2025-08-19 09:43:42,198", "level": "INFO", "message": "Created 1,436 records"},
+    {"timestamp": "2025-08-19 09:43:42,206", "level": "INFO", "message": "Removed 110 duplicate records from FONGOLEMBI_SANS_DOUBLON.gpkg"},
+    {"timestamp": "2025-08-19 09:43:42,206", "level": "INFO", "message": "Processing: GABOU_SANS_DOUBLON.gpkg"},
+    {"timestamp": "2025-08-19 09:43:42,233", "level": "INFO", "message": "Created 1,625 records"},
+    {"timestamp": "2025-08-19 09:43:42,240", "level": "INFO", "message": "Removed 37 duplicate records from GABOU_SANS_DOUBLON.gpkg"},
+    {"timestamp": "2025-08-19 09:43:42,240", "level": "INFO", "message": "Processing: KOAR_SANS_DOUBLON.gpkg"},
+    {"timestamp": "2025-08-19 09:43:42,250", "level": "INFO", "message": "Created 98 records"},
+    {"timestamp": "2025-08-19 09:43:42,254", "level": "INFO", "message": "Removed 3 duplicate records from KOAR_SANS_DOUBLON.gpkg"},
+    {"timestamp": "2025-08-19 09:43:42,254", "level": "INFO", "message": "Processing: MISSIRAH_SANS_DOUBLON.gpkg"},
+    {"timestamp": "2025-08-19 09:43:42,441", "level": "INFO", "message": "Created 5,996 records"},
+    {"timestamp": "2025-08-19 09:43:42,455", "level": "INFO", "message": "Removed 450 duplicate records from MISSIRAH_SANS_DOUBLON.gpkg"},
+    {"timestamp": "2025-08-19 09:43:42,455", "level": "INFO", "message": "Processing: MOUDERY_SANS_DOUBLON.gpkg"},
+    {"timestamp": "2025-08-19 09:43:42,475", "level": "INFO", "message": "Created 984 records"},
+    {"timestamp": "2025-08-19 09:43:42,481", "level": "INFO", "message": "Removed 20 duplicate records from MOUDERY_SANS_DOUBLON.gpkg"},
+    {"timestamp": "2025-08-19 09:43:42,481", "level": "INFO", "message": "Processing: NDOGA_BABACAR_SANS_DOUBLON.gpkg"},
+    {"timestamp": "2025-08-19 09:43:42,598", "level": "INFO", "message": "Created 2,359 records"},
+    {"timestamp": "2025-08-19 09:43:42,607", "level": "INFO", "message": "Removed 798 duplicate records from NDOGA_BABACAR_SANS_DOUBLON.gpkg"},
+    {"timestamp": "2025-08-19 09:43:42,607", "level": "INFO", "message": "Processing: NETTEBOULOU_SANS_DOUBLON.gpkg"},
+    {"timestamp": "2025-08-19 09:43:42,720", "level": "INFO", "message": "Created 3,060 records"},
+    {"timestamp": "2025-08-19 09:43:42,734", "level": "INFO", "message": "Removed 322 duplicate records from NETTEBOULOU_SANS_DOUBLON.gpkg"},
+    {"timestamp": "2025-08-19 09:43:42,734", "level": "INFO", "message": "Processing: SINTHIOU_MALEME_SANS_DOUBLON.gpkg"},
+    {"timestamp": "2025-08-19 09:43:42,770", "level": "INFO", "message": "Created 1,656 records"},
+    {"timestamp": "2025-08-19 09:43:42,776", "level": "INFO", "message": "Removed 44 duplicate records from SINTHIOU_MALEME_SANS_DOUBLON.gpkg"},
+    {"timestamp": "2025-08-19 09:43:42,776", "level": "INFO", "message": "Processing: TOMBORONKOTO_SANS_DOUBLON.gpkg"},
+    {"timestamp": "2025-08-19 09:43:43,645", "level": "INFO", "message": "Created 8,996 records"},
+    {"timestamp": "2025-08-19 09:43:43,662", "level": "INFO", "message": "Removed 1692 duplicate records from TOMBORONKOTO_SANS_DOUBLON.gpkg"},
+    {"timestamp": "2025-08-19 09:43:43,665", "level": "INFO", "message": "Report saved to: duplicate_removal_report.txt"}
+  ]
+}

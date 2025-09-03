@@ -6,17 +6,17 @@
     <title>Land Management Dashboard</title>
     <meta name="description" content="Interactive land management dashboard for administrative analysis">
     <!-- Favicon -->
-    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
     
-    <!-- Third-party CSS -->
-    <link rel="stylesheet" href="lib/leaflet/leaflet.css">
+    <!-- Third-party CSS (root-relative for static hosting) -->
+    <link rel="stylesheet" href="/lib/leaflet/leaflet.css">
     
     <!-- Application CSS -->
-    <link rel="stylesheet" href="assets/css/themes/variables.css">
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/themes/variables.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
     
-    <!-- Preload critical assets -->
-    <link rel="preload" href="assets/js/app.js" as="script">
+    <!-- Preload critical module script correctly for module loader -->
+    <link rel="modulepreload" href="/assets/js/app.js">
 </head>
 <body class="theme-light">
     <div class="app-container">
@@ -216,12 +216,12 @@
         </div>
     </div>
 
-    <!-- Third-party libraries -->
-    <script src="lib/leaflet/leaflet.js" defer></script>
-    <script src="lib/d3/d3.min.js" defer></script>
-    <script src="lib/chart.js/chart.min.js" defer></script>
+    <!-- Third-party libraries (root-relative paths) -->
+    <script src="/lib/leaflet/leaflet.js" defer></script>
+    <script src="/lib/d3/d3.min.js" defer></script>
+    <script src="/lib/chart.js/chart.min.js" defer></script>
     
     <!-- Application JS -->
-    <script type="module" src="assets/js/app.js"></script>
+    <script type="module" src="/assets/js/app.js"></script>
 </body>
 </html>

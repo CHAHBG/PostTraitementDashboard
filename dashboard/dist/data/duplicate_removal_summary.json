@@ -1,0 +1,40 @@
+{
+  "summary": {
+    "total_files_processed": 15,
+    "total_original_records": 43110,
+    "total_cleaned_records": 38830,
+    "total_removed_records": 4280,
+    "overall_duplicate_removal_rate": 9.93,
+    "highest_duplicate_rate": {
+      "file": "NDOGA_BABACAR_SANS_DOUBLON.gpkg", 
+      "rate": 25.28
+    },
+    "lowest_duplicate_rate": {
+      "file": "BALLOU_SANS_DOUBLON.gpkg",
+      "rate": 1.41
+    }
+  },
+  "file_statistics": [
+    {"input_file": "BALA_SANS_DOUBLON.gpkg", "output_file": "BALA_SANS_DOUBLON_no_duplicates.gpkg", "original_records": 911, "cleaned_records": 878, "removed_records": 33, "removal_rate": 3.62, "significant_duplicates": ["0532010101662 (22 occurrences)"]},
+    {"input_file": "BALLOU_SANS_DOUBLON.gpkg", "output_file": "BALLOU_SANS_DOUBLON_no_duplicates.gpkg", "original_records": 1417, "cleaned_records": 1397, "removed_records": 20, "removal_rate": 1.41},
+    {"input_file": "BANDAFASSI_SANS_DOUBLON.gpkg", "output_file": "BANDAFASSI_SANS_DOUBLON_no_duplicates.gpkg", "original_records": 3900, "cleaned_records": 3531, "removed_records": 369, "removal_rate": 9.46},
+    {"input_file": "BEMBOU_SANS_DOUBLON.gpkg", "output_file": "BEMBOU_SANS_DOUBLON_no_duplicates.gpkg", "original_records": 2083, "cleaned_records": 1992, "removed_records": 91, "removal_rate": 4.37},
+    {"input_file": "DIMBOLI_SANS_DOUBLON.gpkg", "output_file": "DIMBOLI_SANS_DOUBLON_no_duplicates.gpkg", "original_records": 3268, "cleaned_records": 3049, "removed_records": 219, "removal_rate": 6.70},
+    {"input_file": "DINDEFELLO_SANS_DOUBLON.gpkg", "output_file": "DINDEFELLO_SANS_DOUBLON_no_duplicates.gpkg", "original_records": 1845, "cleaned_records": 1773, "removed_records": 72, "removal_rate": 3.90},
+    {"input_file": "FONGOLEMBI_SANS_DOUBLON.gpkg", "output_file": "FONGOLEMBI_SANS_DOUBLON_no_duplicates.gpkg", "original_records": 1546, "cleaned_records": 1436, "removed_records": 110, "removal_rate": 7.12},
+    {"input_file": "GABOU_SANS_DOUBLON.gpkg", "output_file": "GABOU_SANS_DOUBLON_no_duplicates.gpkg", "original_records": 1662, "cleaned_records": 1625, "removed_records": 37, "removal_rate": 2.23},
+    {"input_file": "KOAR_SANS_DOUBLON.gpkg", "output_file": "KOAR_SANS_DOUBLON_no_duplicates.gpkg", "original_records": 101, "cleaned_records": 98, "removed_records": 3, "removal_rate": 2.97},
+    {"input_file": "MISSIRAH_SANS_DOUBLON.gpkg", "output_file": "MISSIRAH_SANS_DOUBLON_no_duplicates.gpkg", "original_records": 6446, "cleaned_records": 5996, "removed_records": 450, "removal_rate": 6.98},
+    {"input_file": "MOUDERY_SANS_DOUBLON.gpkg", "output_file": "MOUDERY_SANS_DOUBLON_no_duplicates.gpkg", "original_records": 1004, "cleaned_records": 984, "removed_records": 20, "removal_rate": 1.99},
+    {"input_file": "NDOGA_BABACAR_SANS_DOUBLON.gpkg", "output_file": "NDOGA_BABACAR_SANS_DOUBLON_no_duplicates.gpkg", "original_records": 3157, "cleaned_records": 2359, "removed_records": 798, "removal_rate": 25.28},
+    {"input_file": "NETTEBOULOU_SANS_DOUBLON.gpkg", "output_file": "NETTEBOULOU_SANS_DOUBLON_no_duplicates.gpkg", "original_records": 3382, "cleaned_records": 3060, "removed_records": 322, "removal_rate": 9.52},
+    {"input_file": "SINTHIOU_MALEME_SANS_DOUBLON.gpkg", "output_file": "SINTHIOU_MALEME_SANS_DOUBLON_no_duplicates.gpkg", "original_records": 1700, "cleaned_records": 1656, "removed_records": 44, "removal_rate": 2.59},
+    {"input_file": "TOMBORONKOTO_SANS_DOUBLON.gpkg", "output_file": "TOMBORONKOTO_SANS_DOUBLON_no_duplicates.gpkg", "original_records": 10688, "cleaned_records": 8996, "removed_records": 1692, "removal_rate": 15.83}
+  ],
+  "chart_data": {
+    "labels": ["BALA", "BALLOU", "BANDAFASSI", "BEMBOU", "DIMBOLI", "DINDEFELLO", "FONGOLEMBI", "GABOU", "KOAR", "MISSIRAH", "MOUDERY", "NDOGA_BABACAR", "NETTEBOULOU", "SINTHIOU_MALEME", "TOMBORONKOTO"],
+    "duplicate_rates": [3.62, 1.41, 9.46, 4.37, 6.70, 3.90, 7.12, 2.23, 2.97, 6.98, 1.99, 25.28, 9.52, 2.59, 15.83],
+    "original_records": [911, 1417, 3900, 2083, 3268, 1845, 1546, 1662, 101, 6446, 1004, 3157, 3382, 1700, 10688],
+    "removed_records": [33, 20, 369, 91, 219, 72, 110, 37, 3, 450, 20, 798, 322, 44, 1692]
+  }
+}

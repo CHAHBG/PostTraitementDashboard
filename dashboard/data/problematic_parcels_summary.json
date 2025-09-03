@@ -1,0 +1,16 @@
+{
+  "summary": {
+    "total_problematic_parcels": 6244,
+    "parcels_with_zero_id": 6243,
+    "parcels_with_valid_id": 1
+  },
+  "problematic_parcels": [
+    {"Num_parcel": "0", "parcel_length": 1, "source_file": "BALA_LineStringZ_final.gpkg", "source_path": "C:/Users/USER/Documents/Raw_Data/Levés topo-enquetes/Données LineStringZ Amélioré/Geopackages_Final_Clean/BALA_LineStringZ_final.gpkg", "layer": "0"},
+    {"Num_parcel": "05320101000879", "parcel_length": 14, "source_file": "BALA_LineStringZ_final.gpkg", "source_path": "C:/Users/USER/Documents/Raw_Data/Levés topo-enquetes/Données LineStringZ Amélioré/Geopackages_Final_Clean/BALA_LineStringZ_final.gpkg", "layer": "05320101000879_line"},
+    {"Num_parcel": "0", "parcel_length": 1, "source_file": "BALA_LineStringZ_final.gpkg", "source_path": "C:/Users/USER/Documents/Raw_Data/Levés topo-enquetes/Données LineStringZ Amélioré/Geopackages_Final_Clean/BALA_LineStringZ_final.gpkg", "layer": "0"},
+    {"Num_parcel": "0", "parcel_length": 1, "source_file": "BALA_LineStringZ_final.gpkg", "source_path": "C:/Users/USER/Documents/Raw_Data/Levés topo-enquetes/Données LineStringZ Amélioré/Geopackages_Final_Clean/BALA_LineStringZ_final.gpkg", "layer": "0"},
+    {"Num_parcel": "0", "parcel_length": 1, "source_file": "BALLOU_LineStringZ_final.gpkg", "source_path": "C:/Users/USER/Documents/Raw_Data/Levés topo-enquetes/Données LineStringZ Amélioré/Geopackages_Final_Clean/BALLOU_LineStringZ_final.gpkg", "layer": "0"},
+    {"Num_parcel": "0", "parcel_length": 1, "source_file": "BALLOU_LineStringZ_final.gpkg", "source_path": "C:/Users/USER/Documents/Raw_Data/Levés topo-enquetes/Données LineStringZ Amélioré/Geopackages_Final_Clean/BALLOU_LineStringZ_final.gpkg", "layer": "0"}
+  ],
+  "note": "File contains 6244 problematic parcels in total. Most parcels (6243) have '0' as their Num_parcel value. Only one parcel has a valid Num_parcel value (05320101000879). This suggests a systematic issue with parcel identification in the source data."
+}

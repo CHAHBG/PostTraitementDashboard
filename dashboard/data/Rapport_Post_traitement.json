@@ -1,0 +1,2601 @@
+{
+  "Rapport sommaire": [
+    {
+      "date": "Fichier parcelles individuelles",
+      "2025_08_19_19_17_47": "Enquete_Foncière-Parcelles_Individuelles_19082025.xlsx"
+    },
+    {
+      "date": "Fichier parcelles collectives",
+      "2025_08_19_19_17_47": "Enquete_Foncière-Parcelles_Collectives_19082025.xlsx"
+    },
+    {
+      "date": "Dossier de sortie",
+      "2025_08_19_19_17_47": "E:\\\\POLYGONES\\\\JOINTES"
+    },
+    {
+      "date": "Conflits globaux",
+      "2025_08_19_19_17_47": 213
+    },
+    {
+      "date": "Fichier des conflits",
+      "2025_08_19_19_17_47": "conflicts_both_files.csv"
+    },
+    {
+      "date": "Fichiers traités",
+      "2025_08_19_19_17_47": 15
+    },
+    {
+      "date": "Succès",
+      "2025_08_19_19_17_47": 14
+    },
+    {
+      "date": "Échecs",
+      "2025_08_19_19_17_47": 1
+    },
+    {
+      "date": "Fichiers Jointures Individuelles",
+      "2025_08_19_19_17_47": 14
+    },
+    {
+      "date": "Fichiers Jointures Collectives",
+      "2025_08_19_19_17_47": 14
+    },
+    {
+      "date": "Fichiers avec m$eme IDUP individuelle et collective",
+      "2025_08_19_19_17_47": 9
+    },
+    {
+      "date": "Fichiers Sans Jointure",
+      "2025_08_19_19_17_47": 14
+    },
+    {
+      "date": "Total enregistrement (Parcelles apres netoyage)",
+      "2025_08_19_19_17_47": 36471
+    },
+    {
+      "date": "Parcelles individuelles",
+      "2025_08_19_19_17_47": 25090
+    },
+    {
+      "date": "Parcelles collectives",
+      "2025_08_19_19_17_47": 5366
+    },
+    {
+      "date": "Conflits (Parcelles à la fois individuelle et collecvive)",
+      "2025_08_19_19_17_47": 135
+    },
+    {
+      "date": "Pas de Jointure (Pas d'idup ou ancien  Idup Ndoga)",
+      "2025_08_19_19_17_47": 5880
+    },
+    {
+      "date": "Taux des parcelles individuelles",
+      "2025_08_19_19_17_47": "68.8%"
+    },
+    {
+      "date": "Taux des parcelles collectives",
+      "2025_08_19_19_17_47": "14.7%"
+    },
+    {
+      "date": "Taux des parcelles conflictuelles",
+      "2025_08_19_19_17_47": "0.4%"
+    },
+    {
+      "date": "Taux des parcelles sans jointure",
+      "2025_08_19_19_17_47": "16.1%"
+    }
+  ],
+  "Tableau PostProcess par Commune": [
+    {
+      "commune": "BALA",
+      "brutes": 912,
+      "sans_doublon_geometrique": 911,
+      "sans_doublon_attributaire": 878,
+      "parcelles_collectives": 144,
+      "parcelles_individuelles": 718,
+      "parcelles_en_conflits": 0,
+      "pas_de_jointure": 16,
+      "post_traitees_lot_1_46": 868
+    },
+    {
+      "commune": "BALLOU",
+      "brutes": 1551,
+      "sans_doublon_geometrique": 1417,
+      "sans_doublon_attributaire": 1397,
+      "parcelles_collectives": 277,
+      "parcelles_individuelles": 359,
+      "parcelles_en_conflits": 0,
+      "pas_de_jointure": 761,
+      "post_traitees_lot_1_46": 1000
+    },
+    {
+      "commune": "BANDAFASSI",
+      "brutes": 11731,
+      "sans_doublon_geometrique": 3900,
+      "sans_doublon_attributaire": 3531,
+      "parcelles_collectives": 736,
+      "parcelles_individuelles": 2681,
+      "parcelles_en_conflits": 15,
+      "pas_de_jointure": 99,
+      "post_traitees_lot_1_46": 3591
+    },
+    {
+      "commune": "BEMBOU",
+      "brutes": 5885,
+      "sans_doublon_geometrique": 2083,
+      "sans_doublon_attributaire": 1992,
+      "parcelles_collectives": 407,
+      "parcelles_individuelles": 1542,
+      "parcelles_en_conflits": 5,
+      "pas_de_jointure": 38,
+      "post_traitees_lot_1_46": 1844
+    },
+    {
+      "commune": "DIMBOLI",
+      "brutes": 6474,
+      "sans_doublon_geometrique": 3268,
+      "sans_doublon_attributaire": 3049,
+      "parcelles_collectives": 410,
+      "parcelles_individuelles": 2409,
+      "parcelles_en_conflits": 2,
+      "pas_de_jointure": 228,
+      "post_traitees_lot_1_46": 2898
+    },
+    {
+      "commune": "DINDEFELLO",
+      "brutes": 5725,
+      "sans_doublon_geometrique": 1845,
+      "sans_doublon_attributaire": 1773,
+      "parcelles_collectives": 249,
+      "parcelles_individuelles": 1492,
+      "parcelles_en_conflits": 10,
+      "pas_de_jointure": 22,
+      "post_traitees_lot_1_46": 1830
+    },
+    {
+      "commune": "FONGOLEMBI",
+      "brutes": 5001,
+      "sans_doublon_geometrique": 1546,
+      "sans_doublon_attributaire": 1436,
+      "parcelles_collectives": 541,
+      "parcelles_individuelles": 870,
+      "parcelles_en_conflits": 1,
+      "pas_de_jointure": 24,
+      "post_traitees_lot_1_46": 1482
+    },
+    {
+      "commune": "GABOU",
+      "brutes": 2003,
+      "sans_doublon_geometrique": 1662,
+      "sans_doublon_attributaire": 1625,
+      "parcelles_collectives": 301,
+      "parcelles_individuelles": 601,
+      "parcelles_en_conflits": 0,
+      "pas_de_jointure": 723,
+      "post_traitees_lot_1_46": 1631
+    },
+    {
+      "commune": "KOAR",
+      "brutes": 101,
+      "sans_doublon_geometrique": 101,
+      "sans_doublon_attributaire": 98,
+      "parcelles_collectives": 30,
+      "parcelles_individuelles": 58,
+      "parcelles_en_conflits": 0,
+      "pas_de_jointure": 10,
+      "post_traitees_lot_1_46": 92
+    },
+    {
+      "commune": "MISSIRAH",
+      "brutes": 6844,
+      "sans_doublon_geometrique": 6446,
+      "sans_doublon_attributaire": 5996,
+      "parcelles_collectives": 781,
+      "parcelles_individuelles": 3548,
+      "parcelles_en_conflits": 34,
+      "pas_de_jointure": 1633,
+      "post_traitees_lot_1_46": 6179
+    },
+    {
+      "commune": "MOUDERY",
+      "brutes": 1009,
+      "sans_doublon_geometrique": 1004,
+      "sans_doublon_attributaire": 984,
+      "parcelles_collectives": 310,
+      "parcelles_individuelles": 419,
+      "parcelles_en_conflits": 3,
+      "pas_de_jointure": 252,
+      "post_traitees_lot_1_46": 1006
+    },
+    {
+      "commune": "NDOGA_BABACAR",
+      "brutes": 4759,
+      "sans_doublon_geometrique": 3157,
+      "sans_doublon_attributaire": 2359,
+      "parcelles_collectives": 0,
+      "parcelles_individuelles": 0,
+      "parcelles_en_conflits": 0,
+      "pas_de_jointure": 2359,
+      "post_traitees_lot_1_46": 2974
+    },
+    {
+      "commune": "NETTEBOULOU",
+      "brutes": 3919,
+      "sans_doublon_geometrique": 3382,
+      "sans_doublon_attributaire": 3060,
+      "parcelles_collectives": 538,
+      "parcelles_individuelles": 840,
+      "parcelles_en_conflits": 56,
+      "pas_de_jointure": 1626,
+      "post_traitees_lot_1_46": 2395
+    },
+    {
+      "commune": "SINTHIOU_MALEME",
+      "brutes": 2778,
+      "sans_doublon_geometrique": 1700,
+      "sans_doublon_attributaire": 1656,
+      "parcelles_collectives": 103,
+      "parcelles_individuelles": 1348,
+      "parcelles_en_conflits": 0,
+      "pas_de_jointure": 205,
+      "post_traitees_lot_1_46": 662
+    },
+    {
+      "commune": "TOMBORONKOTO",
+      "brutes": 56834,
+      "sans_doublon_geometrique": 10688,
+      "sans_doublon_attributaire": 8996,
+      "parcelles_collectives": 539,
+      "parcelles_individuelles": 8205,
+      "parcelles_en_conflits": 9,
+      "pas_de_jointure": 243,
+      "post_traitees_lot_1_46": 8819
+    }
+  ],
+  "Jointures": [
+    {
+      "commune": "BALA",
+      "statut_jointure": "SUCCÈS",
+      "message_d_erreur": null
+    },
+    {
+      "commune": "BALLOU",
+      "statut_jointure": "SUCCÈS",
+      "message_d_erreur": null
+    },
+    {
+      "commune": "BANDAFASSI",
+      "statut_jointure": "SUCCÈS",
+      "message_d_erreur": null
+    },
+    {
+      "commune": "BEMBOU",
+      "statut_jointure": "SUCCÈS",
+      "message_d_erreur": null
+    },
+    {
+      "commune": "DIMBOLI",
+      "statut_jointure": "SUCCÈS",
+      "message_d_erreur": null
+    },
+    {
+      "commune": "DINDEFELLO",
+      "statut_jointure": "SUCCÈS",
+      "message_d_erreur": null
+    },
+    {
+      "commune": "FONGOLEMBI",
+      "statut_jointure": "SUCCÈS",
+      "message_d_erreur": null
+    },
+    {
+      "commune": "GABOU",
+      "statut_jointure": "SUCCÈS",
+      "message_d_erreur": null
+    },
+    {
+      "commune": "KOAR",
+      "statut_jointure": "SUCCÈS",
+      "message_d_erreur": null
+    },
+    {
+      "commune": "MISSIRAH",
+      "statut_jointure": "SUCCÈS",
+      "message_d_erreur": null
+    },
+    {
+      "commune": "MOUDERY",
+      "statut_jointure": "SUCCÈS",
+      "message_d_erreur": null
+    },
+    {
+      "commune": "NDOGA_BABACAR",
+      "statut_jointure": "ERREUR",
+      "message_d_erreur": "Ancien IDUP ndoga differents des QR Codes"
+    },
+    {
+      "commune": "NETTEBOULOU",
+      "statut_jointure": "SUCCÈS",
+      "message_d_erreur": null
+    },
+    {
+      "commune": "SINTHIOU_MALEME",
+      "statut_jointure": "SUCCÈS",
+      "message_d_erreur": null
+    },
+    {
+      "commune": "TOMBORONKOTO",
+      "statut_jointure": "SUCCÈS",
+      "message_d_erreur": null
+    }
+  ],
+  "Raport Doublons attributaire": [
+    {
+      "colonne_analysee": "Date",
+      "num_parcel": "2025-08-19T09:43:43"
+    },
+    {
+      "colonne_analysee": "Nombre total de fichiers traités",
+      "num_parcel": 15
+    },
+    {
+      "colonne_analysee": "Fichiers traités avec succès",
+      "num_parcel": 15
+    },
+    {
+      "colonne_analysee": "Fichiers avec erreurs",
+      "num_parcel": 0
+    },
+    {
+      "colonne_analysee": "Fichiers contenant des doublons",
+      "num_parcel": 15
+    },
+    {
+      "colonne_analysee": "Nombre total d’enregistrements originaux",
+      "num_parcel": 43110
+    },
+    {
+      "colonne_analysee": "Nombre total d’enregistrements nettoyés",
+      "num_parcel": 38830
+    },
+    {
+      "colonne_analysee": "Nombre total d’enregistrements supprimés",
+      "num_parcel": 4280
+    },
+    {
+      "colonne_analysee": "Taux de suppression des doublons",
+      "num_parcel": "9.93%"
+    }
+  ],
+  "Rapport Doublons Geometrique": [
+    {
+      "commune": "BALA",
+      "status": "SUCCESS",
+      "enregistrements_brutes": 911,
+      "enregistrements_netttoyes": 878,
+      "enregistrements_supprimes_doublons": 33,
+      "taux_de_suppression_doublons": "3.62%"
+    },
+    {
+      "commune": "BALLOU",
+      "status": "SUCCESS",
+      "enregistrements_brutes": 1417,
+      "enregistrements_netttoyes": 1397,
+      "enregistrements_supprimes_doublons": 20,
+      "taux_de_suppression_doublons": "1.41%"
+    },
+    {
+      "commune": "BANDAFASSI",
+      "status": "SUCCESS",
+      "enregistrements_brutes": 3900,
+      "enregistrements_netttoyes": 3531,
+      "enregistrements_supprimes_doublons": 369,
+      "taux_de_suppression_doublons": "9.46%"
+    },
+    {
+      "commune": "BEMBOU",
+      "status": "SUCCESS",
+      "enregistrements_brutes": 2083,
+      "enregistrements_netttoyes": 1992,
+      "enregistrements_supprimes_doublons": 91,
+      "taux_de_suppression_doublons": "4.37%"
+    },
+    {
+      "commune": "DIMBOLI",
+      "status": "SUCCESS",
+      "enregistrements_brutes": 3268,
+      "enregistrements_netttoyes": 3049,
+      "enregistrements_supprimes_doublons": 219,
+      "taux_de_suppression_doublons": "6.70%"
+    },
+    {
+      "commune": "DINDEFELLO",
+      "status": "SUCCESS",
+      "enregistrements_brutes": 1845,
+      "enregistrements_netttoyes": 1773,
+      "enregistrements_supprimes_doublons": 72,
+      "taux_de_suppression_doublons": "3.90%"
+    },
+    {
+      "commune": "FONGOLEMBI",
+      "status": "SUCCESS",
+      "enregistrements_brutes": 1546,
+      "enregistrements_netttoyes": 1436,
+      "enregistrements_supprimes_doublons": 110,
+      "taux_de_suppression_doublons": "7.12%"
+    },
+    {
+      "commune": "GABOU",
+      "status": "SUCCESS",
+      "enregistrements_brutes": 1662,
+      "enregistrements_netttoyes": 1625,
+      "enregistrements_supprimes_doublons": 37,
+      "taux_de_suppression_doublons": "2.23%"
+    },
+    {
+      "commune": "KOAR",
+      "status": "SUCCESS",
+      "enregistrements_brutes": 101,
+      "enregistrements_netttoyes": 98,
+      "enregistrements_supprimes_doublons": 3,
+      "taux_de_suppression_doublons": "2.97%"
+    },
+    {
+      "commune": "MISSIRAH",
+      "status": "SUCCESS",
+      "enregistrements_brutes": 6446,
+      "enregistrements_netttoyes": 5996,
+      "enregistrements_supprimes_doublons": 450,
+      "taux_de_suppression_doublons": "6.98%"
+    },
+    {
+      "commune": "MOUDERY",
+      "status": "SUCCESS",
+      "enregistrements_brutes": 1004,
+      "enregistrements_netttoyes": 984,
+      "enregistrements_supprimes_doublons": 20,
+      "taux_de_suppression_doublons": "1.99%"
+    },
+    {
+      "commune": "NDOGA_BABACAR",
+      "status": "SUCCESS",
+      "enregistrements_brutes": 3157,
+      "enregistrements_netttoyes": 2359,
+      "enregistrements_supprimes_doublons": 798,
+      "taux_de_suppression_doublons": "25.28%"
+    },
+    {
+      "commune": "NETTEBOULOU",
+      "status": "SUCCESS",
+      "enregistrements_brutes": 3382,
+      "enregistrements_netttoyes": 3060,
+      "enregistrements_supprimes_doublons": 322,
+      "taux_de_suppression_doublons": "9.52%"
+    },
+    {
+      "commune": "SINTHIOU_MALEME",
+      "status": "SUCCESS",
+      "enregistrements_brutes": 1700,
+      "enregistrements_netttoyes": 1656,
+      "enregistrements_supprimes_doublons": 44,
+      "taux_de_suppression_doublons": "2.59%"
+    },
+    {
+      "commune": "TOMBORONKOTO",
+      "status": "SUCCESS",
+      "enregistrements_brutes": 10688,
+      "enregistrements_netttoyes": 8996,
+      "enregistrements_supprimes_doublons": 1692,
+      "taux_de_suppression_doublons": "15.83%"
+    }
+  ],
+  "Details doublons Attributaire": [
+    {
+      "valeur": 532010101662,
+      "frequence": 22,
+      "fid": "[674, 675, 676, 677, 678, 679, 680, 681, 682, 683, 684, 685, 686, 687, 688, 689, 690, 691, 692, 693, 694, 695]",
+      "commune": "BALA"
+    },
+    {
+      "valeur": 532010101811,
+      "frequence": 2,
+      "fid": "[54, 55]",
+      "commune": "BALA"
+    },
+    {
+      "valeur": 532010100647,
+      "frequence": 2,
+      "fid": "[212, 213]",
+      "commune": "BALA"
+    },
+    {
+      "valeur": 532010100249,
+      "frequence": 2,
+      "fid": "[219, 256]",
+      "commune": "BALA"
+    },
+    {
+      "valeur": 532010100862,
+      "frequence": 2,
+      "fid": "[496, 497]",
+      "commune": "BALA"
+    },
+    {
+      "valeur": 532010100712,
+      "frequence": 2,
+      "fid": "[654, 655]",
+      "commune": "BALA"
+    },
+    {
+      "valeur": 532010101670,
+      "frequence": 2,
+      "fid": "[657, 882]",
+      "commune": "BALA"
+    },
+    {
+      "valeur": 532010100419,
+      "frequence": 2,
+      "fid": "[662, 673]",
+      "commune": "BALA"
+    },
+    {
+      "valeur": 532010101269,
+      "frequence": 2,
+      "fid": "[720, 721]",
+      "commune": "BALA"
+    },
+    {
+      "valeur": 532010101966,
+      "frequence": 2,
+      "fid": "[770, 771]",
+      "commune": "BALA"
+    },
+    {
+      "valeur": 532010100782,
+      "frequence": 2,
+      "fid": "[772, 773]",
+      "commune": "BALA"
+    },
+    {
+      "valeur": 532010101974,
+      "frequence": 2,
+      "fid": "[785, 786]",
+      "commune": "BALA"
+    },
+    {
+      "valeur": 532010100460,
+      "frequence": 2,
+      "fid": "[830, 833]",
+      "commune": "BALA"
+    },
+    {
+      "valeur": 512030103549,
+      "frequence": 2,
+      "fid": "[1399, 1400]",
+      "commune": "BALLOU"
+    },
+    {
+      "valeur": 512030102877,
+      "frequence": 2,
+      "fid": "[642, 652]",
+      "commune": "BALLOU"
+    },
+    {
+      "valeur": 512030103757,
+      "frequence": 2,
+      "fid": "[774, 802]",
+      "commune": "BALLOU"
+    },
+    {
+      "valeur": 512030103749,
+      "frequence": 2,
+      "fid": "[775, 803]",
+      "commune": "BALLOU"
+    },
+    {
+      "valeur": 512030101695,
+      "frequence": 2,
+      "fid": "[776, 804]",
+      "commune": "BALLOU"
+    },
+    {
+      "valeur": 512030100877,
+      "frequence": 2,
+      "fid": "[777, 805]",
+      "commune": "BALLOU"
+    },
+    {
+      "valeur": 512030101175,
+      "frequence": 2,
+      "fid": "[778, 806]",
+      "commune": "BALLOU"
+    },
+    {
+      "valeur": 512030103253,
+      "frequence": 2,
+      "fid": "[779, 807]",
+      "commune": "BALLOU"
+    },
+    {
+      "valeur": 512030101150,
+      "frequence": 2,
+      "fid": "[780, 808]",
+      "commune": "BALLOU"
+    },
+    {
+      "valeur": 512030103242,
+      "frequence": 2,
+      "fid": "[781, 809]",
+      "commune": "BALLOU"
+    },
+    {
+      "valeur": 512030103250,
+      "frequence": 2,
+      "fid": "[782, 810]",
+      "commune": "BALLOU"
+    },
+    {
+      "valeur": 512030103281,
+      "frequence": 2,
+      "fid": "[783, 811]",
+      "commune": "BALLOU"
+    },
+    {
+      "valeur": 512030103258,
+      "frequence": 2,
+      "fid": "[784, 812]",
+      "commune": "BALLOU"
+    },
+    {
+      "valeur": 512030103000,
+      "frequence": 2,
+      "fid": "[785, 813]",
+      "commune": "BALLOU"
+    },
+    {
+      "valeur": 512030100829,
+      "frequence": 2,
+      "fid": "[786, 814]",
+      "commune": "BALLOU"
+    },
+    {
+      "valeur": 512030102213,
+      "frequence": 2,
+      "fid": "[787, 815]",
+      "commune": "BALLOU"
+    },
+    {
+      "valeur": 512030101727,
+      "frequence": 2,
+      "fid": "[788, 816]",
+      "commune": "BALLOU"
+    },
+    {
+      "valeur": 512030103612,
+      "frequence": 2,
+      "fid": "[817, 818]",
+      "commune": "BALLOU"
+    },
+    {
+      "valeur": 512030103231,
+      "frequence": 2,
+      "fid": "[1217, 1219]",
+      "commune": "BALLOU"
+    },
+    {
+      "valeur": 512030103212,
+      "frequence": 2,
+      "fid": "[1227, 1228]",
+      "commune": "BALLOU"
+    },
+    {
+      "valeur": 1312010101745,
+      "frequence": 11,
+      "fid": "[1416, 1417, 1420, 1421, 1427, 1444, 1445, 1461, 1462, 1473, 1474]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010102968,
+      "frequence": 7,
+      "fid": "[2154, 2274, 2275, 2412, 2429, 2430, 2509]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010101657,
+      "frequence": 6,
+      "fid": "[743, 795, 796, 799, 800, 801]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010100436,
+      "frequence": 6,
+      "fid": "[2919, 2960, 2961, 3010, 3017, 3018]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010100627,
+      "frequence": 4,
+      "fid": "[1498, 1499, 1514, 1515]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010102208,
+      "frequence": 4,
+      "fid": "[1641, 1642, 1696, 1697]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010102421,
+      "frequence": 3,
+      "fid": "[1168, 1201, 1247]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010102832,
+      "frequence": 3,
+      "fid": "[59, 75, 196]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010102648,
+      "frequence": 3,
+      "fid": "[1977, 2001, 2050]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010100188,
+      "frequence": 3,
+      "fid": "[1980, 2003, 2053]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010101040,
+      "frequence": 3,
+      "fid": "[1916, 1917, 1936]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010101953,
+      "frequence": 3,
+      "fid": "[771, 772, 777]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010102176,
+      "frequence": 3,
+      "fid": "[30, 135, 227]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010100581,
+      "frequence": 3,
+      "fid": "[85, 149, 241]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010100259,
+      "frequence": 3,
+      "fid": "[73, 150, 242]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010101747,
+      "frequence": 3,
+      "fid": "[1906, 1908, 1938]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010102502,
+      "frequence": 3,
+      "fid": "[1971, 1996, 2002]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010104041,
+      "frequence": 3,
+      "fid": "[1188, 1197, 1243]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010104033,
+      "frequence": 3,
+      "fid": "[1189, 1198, 1254]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010102647,
+      "frequence": 3,
+      "fid": "[1635, 1636, 1695]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010102489,
+      "frequence": 3,
+      "fid": "[2111, 2123, 2693]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010101980,
+      "frequence": 3,
+      "fid": "[2205, 2223, 2470]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010101563,
+      "frequence": 3,
+      "fid": "[2206, 2224, 2471]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010101270,
+      "frequence": 3,
+      "fid": "[2648, 2649, 2650]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010100574,
+      "frequence": 3,
+      "fid": "[2918, 2934, 3015]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010104554,
+      "frequence": 3,
+      "fid": "[3073, 3074, 3077]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010100960,
+      "frequence": 3,
+      "fid": "[3270, 3277, 3284]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010104583,
+      "frequence": 3,
+      "fid": "[3446, 3877, 3878]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010102931,
+      "frequence": 3,
+      "fid": "[3457, 3466, 3513]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010100568,
+      "frequence": 3,
+      "fid": "[3682, 3683, 3684]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010104591,
+      "frequence": 2,
+      "fid": "[368, 1592]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010100755,
+      "frequence": 2,
+      "fid": "[572, 610]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010100085,
+      "frequence": 2,
+      "fid": "[573, 611]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010100070,
+      "frequence": 2,
+      "fid": "[574, 612]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010100758,
+      "frequence": 2,
+      "fid": "[1877, 2634]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010101937,
+      "frequence": 2,
+      "fid": "[773, 776]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010102079,
+      "frequence": 2,
+      "fid": "[774, 775]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010101476,
+      "frequence": 2,
+      "fid": "[944, 2601]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010100967,
+      "frequence": 2,
+      "fid": "[1504, 1506]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010102525,
+      "frequence": 2,
+      "fid": "[1965, 1990]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010104372,
+      "frequence": 2,
+      "fid": "[1167, 1291]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010102170,
+      "frequence": 2,
+      "fid": "[783, 797]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010102344,
+      "frequence": 2,
+      "fid": "[1966, 1991]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010102672,
+      "frequence": 2,
+      "fid": "[1967, 1992]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010102262,
+      "frequence": 2,
+      "fid": "[1968, 1993]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010101117,
+      "frequence": 2,
+      "fid": "[1834, 1933]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010100813,
+      "frequence": 2,
+      "fid": "[1835, 1931]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010101013,
+      "frequence": 2,
+      "fid": "[1836, 1932]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010100805,
+      "frequence": 2,
+      "fid": "[1837, 1946]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010102494,
+      "frequence": 2,
+      "fid": "[1969, 1994]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010102416,
+      "frequence": 2,
+      "fid": "[1970, 1995]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010102447,
+      "frequence": 2,
+      "fid": "[1712, 1724]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010102877,
+      "frequence": 2,
+      "fid": "[1623, 1692]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010104543,
+      "frequence": 2,
+      "fid": "[883, 2133]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010104446,
+      "frequence": 2,
+      "fid": "[884, 2870]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010100531,
+      "frequence": 2,
+      "fid": "[599, 614]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010102174,
+      "frequence": 2,
+      "fid": "[698, 704]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010101458,
+      "frequence": 2,
+      "fid": "[699, 707]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010101537,
+      "frequence": 2,
+      "fid": "[700, 770]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010101247,
+      "frequence": 2,
+      "fid": "[400, 435]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010101442,
+      "frequence": 2,
+      "fid": "[701, 718]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010101655,
+      "frequence": 2,
+      "fid": "[702, 753]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010100314,
+      "frequence": 2,
+      "fid": "[60, 183]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010100306,
+      "frequence": 2,
+      "fid": "[61, 184]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010100041,
+      "frequence": 2,
+      "fid": "[62, 185]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010101589,
+      "frequence": 2,
+      "fid": "[63, 186]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010101493,
+      "frequence": 2,
+      "fid": "[64, 187]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010100322,
+      "frequence": 2,
+      "fid": "[65, 188]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010100025,
+      "frequence": 2,
+      "fid": "[66, 189]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010101981,
+      "frequence": 2,
+      "fid": "[67, 190]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010101477,
+      "frequence": 2,
+      "fid": "[68, 191]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010101846,
+      "frequence": 2,
+      "fid": "[69, 192]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010100252,
+      "frequence": 2,
+      "fid": "[70, 193]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010100275,
+      "frequence": 2,
+      "fid": "[71, 194]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010100237,
+      "frequence": 2,
+      "fid": "[1713, 1731]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010100385,
+      "frequence": 2,
+      "fid": "[74, 195]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010101501,
+      "frequence": 2,
+      "fid": "[76, 197]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010100573,
+      "frequence": 2,
+      "fid": "[77, 198]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010100557,
+      "frequence": 2,
+      "fid": "[78, 199]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010100549,
+      "frequence": 2,
+      "fid": "[79, 200]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010100565,
+      "frequence": 2,
+      "fid": "[80, 201]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010101992,
+      "frequence": 2,
+      "fid": "[81, 202]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010101055,
+      "frequence": 2,
+      "fid": "[82, 203]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010101902,
+      "frequence": 2,
+      "fid": "[83, 204]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010102016,
+      "frequence": 2,
+      "fid": "[84, 205]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010102008,
+      "frequence": 2,
+      "fid": "[86, 206]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010101845,
+      "frequence": 2,
+      "fid": "[87, 207]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010101982,
+      "frequence": 2,
+      "fid": "[88, 208]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010101376,
+      "frequence": 2,
+      "fid": "[89, 209]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010100597,
+      "frequence": 2,
+      "fid": "[90, 210]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010101344,
+      "frequence": 2,
+      "fid": "[91, 211]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010102006,
+      "frequence": 2,
+      "fid": "[92, 212]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010100589,
+      "frequence": 2,
+      "fid": "[93, 213]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010102014,
+      "frequence": 2,
+      "fid": "[94, 214]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010100295,
+      "frequence": 2,
+      "fid": "[95, 215]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010102455,
+      "frequence": 2,
+      "fid": "[96, 156]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010102367,
+      "frequence": 2,
+      "fid": "[97, 157]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010102087,
+      "frequence": 2,
+      "fid": "[98, 158]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010102184,
+      "frequence": 2,
+      "fid": "[99, 159]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010102216,
+      "frequence": 2,
+      "fid": "[100, 160]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010102168,
+      "frequence": 2,
+      "fid": "[101, 161]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010102056,
+      "frequence": 2,
+      "fid": "[102, 162]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010102719,
+      "frequence": 2,
+      "fid": "[103, 163]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010102688,
+      "frequence": 2,
+      "fid": "[104, 164]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010102680,
+      "frequence": 2,
+      "fid": "[105, 165]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010102864,
+      "frequence": 2,
+      "fid": "[106, 166]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010102887,
+      "frequence": 2,
+      "fid": "[1576, 2807]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010102727,
+      "frequence": 2,
+      "fid": "[108, 167]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010102848,
+      "frequence": 2,
+      "fid": "[109, 168]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010102840,
+      "frequence": 2,
+      "fid": "[110, 169]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010102816,
+      "frequence": 2,
+      "fid": "[111, 170]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010102808,
+      "frequence": 2,
+      "fid": "[112, 171]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010102760,
+      "frequence": 2,
+      "fid": "[113, 172]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010102999,
+      "frequence": 2,
+      "fid": "[114, 173]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010102712,
+      "frequence": 2,
+      "fid": "[115, 174]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010102879,
+      "frequence": 2,
+      "fid": "[116, 175]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010102615,
+      "frequence": 2,
+      "fid": "[117, 176]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010100125,
+      "frequence": 2,
+      "fid": "[118, 177]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010102895,
+      "frequence": 2,
+      "fid": "[119, 178]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010102623,
+      "frequence": 2,
+      "fid": "[120, 179]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010102352,
+      "frequence": 2,
+      "fid": "[121, 180]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010100117,
+      "frequence": 2,
+      "fid": "[122, 181]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010100377,
+      "frequence": 2,
+      "fid": "[123, 182]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010101575,
+      "frequence": 2,
+      "fid": "[124, 216]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010101559,
+      "frequence": 2,
+      "fid": "[125, 217]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010101551,
+      "frequence": 2,
+      "fid": "[126, 218]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010101320,
+      "frequence": 2,
+      "fid": "[127, 219]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010102914,
+      "frequence": 2,
+      "fid": "[128, 220]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010101567,
+      "frequence": 2,
+      "fid": "[129, 221]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010101351,
+      "frequence": 2,
+      "fid": "[130, 222]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010101942,
+      "frequence": 2,
+      "fid": "[131, 223]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010101998,
+      "frequence": 2,
+      "fid": "[132, 224]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010101853,
+      "frequence": 2,
+      "fid": "[133, 225]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010200020,
+      "frequence": 2,
+      "fid": "[9400, 9750]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010202208,
+      "frequence": 2,
+      "fid": "[9401, 9751]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010202216,
+      "frequence": 2,
+      "fid": "[9402, 9755]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010200012,
+      "frequence": 2,
+      "fid": "[9403, 9756]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010202184,
+      "frequence": 2,
+      "fid": "[9404, 9757]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010202224,
+      "frequence": 2,
+      "fid": "[9405, 9758]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010202200,
+      "frequence": 2,
+      "fid": "[9406, 9759]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010200843,
+      "frequence": 2,
+      "fid": "[9407, 9760]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010210086,
+      "frequence": 2,
+      "fid": "[114, 183]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010201601,
+      "frequence": 2,
+      "fid": "[9410, 9763]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010203284,
+      "frequence": 2,
+      "fid": "[9411, 9764]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010203324,
+      "frequence": 2,
+      "fid": "[9412, 9765]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010203332,
+      "frequence": 2,
+      "fid": "[9413, 9766]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010203276,
+      "frequence": 2,
+      "fid": "[9414, 9767]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010203048,
+      "frequence": 2,
+      "fid": "[9415, 9768]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010203292,
+      "frequence": 2,
+      "fid": "[9416, 9769]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010203300,
+      "frequence": 2,
+      "fid": "[9417, 9770]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010200804,
+      "frequence": 2,
+      "fid": "[9418, 9771]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010203316,
+      "frequence": 2,
+      "fid": "[9419, 9772]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010203308,
+      "frequence": 2,
+      "fid": "[9420, 9773]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010204252,
+      "frequence": 2,
+      "fid": "[9421, 9774]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010204244,
+      "frequence": 2,
+      "fid": "[9422, 9775]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010200302,
+      "frequence": 2,
+      "fid": "[9423, 9776]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010204236,
+      "frequence": 2,
+      "fid": "[9424, 9777]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010200294,
+      "frequence": 2,
+      "fid": "[9425, 9778]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010202992,
+      "frequence": 2,
+      "fid": "[9426, 9779]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010203000,
+      "frequence": 2,
+      "fid": "[9427, 9780]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010204220,
+      "frequence": 2,
+      "fid": "[9428, 9781]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010204228,
+      "frequence": 2,
+      "fid": "[9429, 9782]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010204260,
+      "frequence": 2,
+      "fid": "[9430, 9783]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010200286,
+      "frequence": 2,
+      "fid": "[9431, 9784]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010203040,
+      "frequence": 2,
+      "fid": "[9432, 9785]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010203032,
+      "frequence": 2,
+      "fid": "[9433, 9786]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010203016,
+      "frequence": 2,
+      "fid": "[9434, 9787]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010200278,
+      "frequence": 2,
+      "fid": "[9435, 9788]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010203008,
+      "frequence": 2,
+      "fid": "[9436, 9789]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010203024,
+      "frequence": 2,
+      "fid": "[9437, 9790]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010200270,
+      "frequence": 2,
+      "fid": "[9438, 9791]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010200334,
+      "frequence": 2,
+      "fid": "[9439, 9792]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010200326,
+      "frequence": 2,
+      "fid": "[9440, 9793]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010200310,
+      "frequence": 2,
+      "fid": "[9441, 9794]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010200318,
+      "frequence": 2,
+      "fid": "[9442, 9795]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010200262,
+      "frequence": 2,
+      "fid": "[9443, 9796]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010202168,
+      "frequence": 2,
+      "fid": "[9444, 9797]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010202176,
+      "frequence": 2,
+      "fid": "[9445, 9798]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010202160,
+      "frequence": 2,
+      "fid": "[9446, 9799]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010202144,
+      "frequence": 2,
+      "fid": "[9447, 9800]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010202152,
+      "frequence": 2,
+      "fid": "[9448, 9801]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010202120,
+      "frequence": 2,
+      "fid": "[9449, 9802]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010203296,
+      "frequence": 2,
+      "fid": "[9450, 9803]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010203288,
+      "frequence": 2,
+      "fid": "[9451, 9804]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010200378,
+      "frequence": 2,
+      "fid": "[9452, 9805]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010200330,
+      "frequence": 2,
+      "fid": "[9454, 9595]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010203770,
+      "frequence": 2,
+      "fid": "[9455, 9596]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010203827,
+      "frequence": 2,
+      "fid": "[9456, 9597]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010203746,
+      "frequence": 2,
+      "fid": "[9457, 9599]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010203320,
+      "frequence": 2,
+      "fid": "[9458, 9601]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010203312,
+      "frequence": 2,
+      "fid": "[9459, 9602]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010203762,
+      "frequence": 2,
+      "fid": "[9460, 9603]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010203313,
+      "frequence": 2,
+      "fid": "[9461, 9806]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010203305,
+      "frequence": 2,
+      "fid": "[9462, 9807]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010203289,
+      "frequence": 2,
+      "fid": "[9463, 9808]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010202089,
+      "frequence": 2,
+      "fid": "[9464, 9809]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010202049,
+      "frequence": 2,
+      "fid": "[9465, 9810]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010212939,
+      "frequence": 2,
+      "fid": "[116, 184]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010203321,
+      "frequence": 2,
+      "fid": "[9467, 9812]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010202077,
+      "frequence": 2,
+      "fid": "[9468, 9813]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010200142,
+      "frequence": 2,
+      "fid": "[9469, 9814]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010200133,
+      "frequence": 2,
+      "fid": "[9470, 9815]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010200049,
+      "frequence": 2,
+      "fid": "[9471, 9816]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010203835,
+      "frequence": 2,
+      "fid": "[9472, 9817]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010203839,
+      "frequence": 2,
+      "fid": "[9474, 9819]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010200025,
+      "frequence": 2,
+      "fid": "[9475, 9820]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010200017,
+      "frequence": 2,
+      "fid": "[9476, 9821]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010200033,
+      "frequence": 2,
+      "fid": "[9477, 9822]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010202033,
+      "frequence": 2,
+      "fid": "[9478, 9823]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010201329,
+      "frequence": 2,
+      "fid": "[9479, 9824]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010203754,
+      "frequence": 2,
+      "fid": "[9480, 9825]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010200009,
+      "frequence": 2,
+      "fid": "[9481, 9826]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010200041,
+      "frequence": 2,
+      "fid": "[9482, 9827]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010212947,
+      "frequence": 2,
+      "fid": "[117, 185]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010200001,
+      "frequence": 2,
+      "fid": "[9484, 9829]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010201389,
+      "frequence": 2,
+      "fid": "[9485, 9830]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010211467,
+      "frequence": 2,
+      "fid": "[118, 186]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010201381,
+      "frequence": 2,
+      "fid": "[9487, 9832]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010201397,
+      "frequence": 2,
+      "fid": "[9488, 9833]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010201373,
+      "frequence": 2,
+      "fid": "[9489, 9834]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010211459,
+      "frequence": 2,
+      "fid": "[119, 187]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010211475,
+      "frequence": 2,
+      "fid": "[120, 188]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010201365,
+      "frequence": 2,
+      "fid": "[9492, 9837]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010201341,
+      "frequence": 2,
+      "fid": "[9493, 9838]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010201357,
+      "frequence": 2,
+      "fid": "[9494, 9839]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010201349,
+      "frequence": 2,
+      "fid": "[9495, 9840]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010201333,
+      "frequence": 2,
+      "fid": "[9496, 9841]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010203297,
+      "frequence": 2,
+      "fid": "[9498, 9843]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010200293,
+      "frequence": 2,
+      "fid": "[9499, 9844]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010200341,
+      "frequence": 2,
+      "fid": "[9501, 9846]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010200333,
+      "frequence": 2,
+      "fid": "[9502, 9847]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010200325,
+      "frequence": 2,
+      "fid": "[9503, 9848]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010200121,
+      "frequence": 2,
+      "fid": "[9504, 9849]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010200309,
+      "frequence": 2,
+      "fid": "[9505, 9850]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010200261,
+      "frequence": 2,
+      "fid": "[9506, 9851]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010200285,
+      "frequence": 2,
+      "fid": "[9507, 9852]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010202025,
+      "frequence": 2,
+      "fid": "[9508, 9853]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010202057,
+      "frequence": 2,
+      "fid": "[9509, 9854]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010200593,
+      "frequence": 2,
+      "fid": "[9510, 9855]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010200277,
+      "frequence": 2,
+      "fid": "[9511, 9856]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010200601,
+      "frequence": 2,
+      "fid": "[9512, 9857]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010203281,
+      "frequence": 2,
+      "fid": "[9513, 9858]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010200301,
+      "frequence": 2,
+      "fid": "[9514, 9859]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010202073,
+      "frequence": 2,
+      "fid": "[9515, 9860]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010202173,
+      "frequence": 2,
+      "fid": "[9516, 9861]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010200269,
+      "frequence": 2,
+      "fid": "[9517, 9862]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010203273,
+      "frequence": 2,
+      "fid": "[9518, 9863]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010202157,
+      "frequence": 2,
+      "fid": "[9519, 9864]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010202165,
+      "frequence": 2,
+      "fid": "[9520, 9865]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010211047,
+      "frequence": 2,
+      "fid": "[9521, 9867]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010211055,
+      "frequence": 2,
+      "fid": "[9522, 9868]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010211116,
+      "frequence": 2,
+      "fid": "[9523, 9869]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010211071,
+      "frequence": 2,
+      "fid": "[9524, 9870]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010211181,
+      "frequence": 2,
+      "fid": "[9525, 9871]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010211212,
+      "frequence": 2,
+      "fid": "[9526, 9872]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010211189,
+      "frequence": 2,
+      "fid": "[9527, 9873]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010211244,
+      "frequence": 2,
+      "fid": "[9528, 9874]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010211197,
+      "frequence": 2,
+      "fid": "[9529, 9875]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010211252,
+      "frequence": 2,
+      "fid": "[9530, 9876]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010211124,
+      "frequence": 2,
+      "fid": "[9531, 9877]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010211092,
+      "frequence": 2,
+      "fid": "[9532, 9878]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010211026,
+      "frequence": 2,
+      "fid": "[9533, 9879]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010211236,
+      "frequence": 2,
+      "fid": "[9534, 9880]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010211100,
+      "frequence": 2,
+      "fid": "[9535, 9881]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010211108,
+      "frequence": 2,
+      "fid": "[9536, 9882]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010211054,
+      "frequence": 2,
+      "fid": "[9537, 9883]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010211228,
+      "frequence": 2,
+      "fid": "[9538, 9884]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010211220,
+      "frequence": 2,
+      "fid": "[9539, 9885]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010211062,
+      "frequence": 2,
+      "fid": "[9540, 9886]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010211260,
+      "frequence": 2,
+      "fid": "[9542, 9888]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010208273,
+      "frequence": 2,
+      "fid": "[9543, 9889]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010208338,
+      "frequence": 2,
+      "fid": "[9544, 9891]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010208314,
+      "frequence": 2,
+      "fid": "[9546, 9894]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010208351,
+      "frequence": 2,
+      "fid": "[9547, 9895]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010208343,
+      "frequence": 2,
+      "fid": "[9548, 9896]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010210836,
+      "frequence": 2,
+      "fid": "[9549, 9902]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010202869,
+      "frequence": 2,
+      "fid": "[9582, 9588]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010204107,
+      "frequence": 2,
+      "fid": "[9585, 9652]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010201880,
+      "frequence": 2,
+      "fid": "[9903, 9987]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010210041,
+      "frequence": 2,
+      "fid": "[121, 189]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010203402,
+      "frequence": 2,
+      "fid": "[9906, 10205]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010201872,
+      "frequence": 2,
+      "fid": "[9942, 10153]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010202832,
+      "frequence": 2,
+      "fid": "[9979, 9980]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010201169,
+      "frequence": 2,
+      "fid": "[10002, 10186]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010201177,
+      "frequence": 2,
+      "fid": "[10003, 10187]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010200744,
+      "frequence": 2,
+      "fid": "[10005, 10127]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010211477,
+      "frequence": 2,
+      "fid": "[123, 191]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010211469,
+      "frequence": 2,
+      "fid": "[124, 192]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010211483,
+      "frequence": 2,
+      "fid": "[126, 194]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010201407,
+      "frequence": 2,
+      "fid": "[10092, 10188]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010201899,
+      "frequence": 2,
+      "fid": "[10105, 10161]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010201874,
+      "frequence": 2,
+      "fid": "[10124, 10125]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010211106,
+      "frequence": 2,
+      "fid": "[10158, 10159]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010204110,
+      "frequence": 2,
+      "fid": "[10356, 10395]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010204026,
+      "frequence": 2,
+      "fid": "[10357, 10405]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010204109,
+      "frequence": 2,
+      "fid": "[10365, 10562]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010204042,
+      "frequence": 2,
+      "fid": "[10368, 10462]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010204106,
+      "frequence": 2,
+      "fid": "[10374, 10510]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010204096,
+      "frequence": 2,
+      "fid": "[10379, 10502]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010204105,
+      "frequence": 2,
+      "fid": "[10380, 10493]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010201073,
+      "frequence": 2,
+      "fid": "[10381, 10463]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010201058,
+      "frequence": 2,
+      "fid": "[10386, 10408]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010201050,
+      "frequence": 2,
+      "fid": "[10398, 10511]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010201068,
+      "frequence": 2,
+      "fid": "[10400, 10452]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010201067,
+      "frequence": 2,
+      "fid": "[10404, 10494]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010201021,
+      "frequence": 2,
+      "fid": "[10416, 10509]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010201029,
+      "frequence": 2,
+      "fid": "[10417, 10507]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010202433,
+      "frequence": 2,
+      "fid": "[10418, 10572]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010200555,
+      "frequence": 2,
+      "fid": "[10419, 10565]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010200578,
+      "frequence": 2,
+      "fid": "[10555, 10609]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010202979,
+      "frequence": 2,
+      "fid": "[10566, 10606]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010202294,
+      "frequence": 2,
+      "fid": "[10573, 10575]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010202636,
+      "frequence": 2,
+      "fid": "[10574, 10576]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010205166,
+      "frequence": 2,
+      "fid": "[4, 4636]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010205795,
+      "frequence": 2,
+      "fid": "[5, 4637]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010202335,
+      "frequence": 2,
+      "fid": "[7, 4600]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010203978,
+      "frequence": 2,
+      "fid": "[15, 36]",
+      "commune": "BANDAFASSI"
+    },
+    {
+      "valeur": 1312010205587,
+      "frequence": 2,
+      "fid": "[1, 4585]",
+      "commune": "BANDAFASSI"
+    }
+  ]
+
+}

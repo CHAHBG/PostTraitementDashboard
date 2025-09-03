@@ -13,10 +13,25 @@ const path = require('path');
 // Configuration
 const sourceDir = path.resolve(__dirname, '..');
 const distDir = path.resolve(sourceDir, 'dist');
+
+// Paths outside the dashboard folder (project root)
+const projectRoot = path.resolve(sourceDir, '..');
+
 const directories = [
-  'assets',
-  'geojson',
-  'data'
+  'assets'
+];
+
+// Vendor libraries to copy from node_modules into dist/lib
+const vendorLibs = [
+  { src: path.join(sourceDir, 'node_modules', 'leaflet', 'dist'), dest: path.join(distDir, 'lib', 'leaflet') },
+  { src: path.join(sourceDir, 'node_modules', 'd3', 'dist'), dest: path.join(distDir, 'lib', 'd3') },
+  { src: path.join(sourceDir, 'node_modules', 'chart.js', 'dist'), dest: path.join(distDir, 'lib', 'chart.js') }
+];
+
+// Data and geojson live at project root; copy them explicitly
+const externalDirs = [
+  { src: path.join(projectRoot, 'geojson'), dest: path.join(distDir, 'geojson') },
+  { src: path.join(projectRoot, 'data'), dest: path.join(distDir, 'data') }
 ];
 
 // Create dist directory if it doesn't exist
@@ -39,6 +54,22 @@ directories.forEach(dir => {
     path.join(distDir, dir)
   );
   console.log(`Copied ${dir} directory to dist`);
+});
+
+// Copy external project directories (geojson, data)
+externalDirs.forEach(d => {
+  copyDirectory(d.src, d.dest);
+  console.log(`Copied ${d.src} -> ${d.dest}`);
+});
+
+// Copy vendor libraries from node_modules into dist/lib
+vendorLibs.forEach(lib => {
+  if (fs.existsSync(lib.src)) {
+    copyDirectory(lib.src, lib.dest);
+    console.log(`Copied vendor lib ${lib.src} -> ${lib.dest}`);
+  } else {
+    console.log(`Vendor lib not found: ${lib.src} - skipping`);
+  }
 });
 
 // Create netlify.toml

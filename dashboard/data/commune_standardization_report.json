@@ -1,0 +1,160 @@
+{
+  "files": [
+    {
+      "input": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\data\\communes_data.json",
+      "output": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\data\\communes_data.normalized.json",
+      "total_processed": 15,
+      "found_keys": {
+        "name": 15
+      },
+      "samples": {
+        "name": "BALA"
+      }
+    },
+    {
+      "input": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\data\\dashboard_data_complete.json",
+      "output": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\data\\dashboard_data_complete.normalized.json",
+      "total_processed": 0,
+      "found_keys": {},
+      "samples": {}
+    },
+    {
+      "input": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\data\\dashboard_kpis.json",
+      "output": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\data\\dashboard_kpis.normalized.json",
+      "total_processed": 0,
+      "found_keys": {},
+      "samples": {}
+    },
+    {
+      "input": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\data\\duplicate_removal_log.json",
+      "output": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\data\\duplicate_removal_log.normalized.json",
+      "total_processed": 53,
+      "found_keys": {
+        "level": 48
+      },
+      "samples": {
+        "level": "INFO"
+      }
+    },
+    {
+      "input": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\data\\duplicate_removal_summary.json",
+      "output": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\data\\duplicate_removal_summary.normalized.json",
+      "total_processed": 15,
+      "found_keys": {},
+      "samples": {}
+    },
+    {
+      "input": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\data\\nettoyage_doublon_idup.json",
+      "output": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\data\\nettoyage_doublon_idup.normalized.json",
+      "total_processed": 6,
+      "found_keys": {
+        "file": 6
+      },
+      "samples": {
+        "file": "BALA_LINESTRINGZ"
+      }
+    },
+    {
+      "input": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\data\\parcel_join_conflicts.json",
+      "output": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\data\\parcel_join_conflicts.normalized.json",
+      "total_processed": 20,
+      "found_keys": {
+        "conflict_type": 20
+      },
+      "samples": {
+        "conflict_type": "BOTH_INDIVIDUAL_AND_COLLECTIVE"
+      }
+    },
+    {
+      "input": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\data\\problematic_parcels_summary.json",
+      "output": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\data\\problematic_parcels_summary.normalized.json",
+      "total_processed": 6,
+      "found_keys": {},
+      "samples": {}
+    },
+    {
+      "input": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\data\\rapport_jointure.json",
+      "output": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\data\\rapport_jointure.normalized.json",
+      "total_processed": 15,
+      "found_keys": {
+        "polygon_file": 15
+      },
+      "samples": {
+        "polygon_file": "BALA_LINESTRINGZ"
+      }
+    },
+    {
+      "input": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\data\\Rapport_Post_traitement.json",
+      "output": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\data\\Rapport_Post_traitement.normalized.json",
+      "total_processed": 426,
+      "found_keys": {
+        "date": 17,
+        "commune": 396,
+        "colonne_analysee": 6
+      },
+      "samples": {
+        "date": "FICHIER PARCELLES INDIVIDUELLES",
+        "commune": "BALA",
+        "colonne_analysee": "DATE"
+      }
+    },
+    {
+      "input": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\geojson\\communes\\communes.geojson",
+      "output": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\geojson\\communes\\communes.normalized.geojson",
+      "total_features": 17,
+      "found_keys": {
+        "CCRCA": 17
+      },
+      "samples": {
+        "CCRCA": "DIMBOLI"
+      }
+    },
+    {
+      "input": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\geojson\\communes\\communes_boundou.geojson",
+      "output": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\geojson\\communes\\communes_boundou.normalized.geojson",
+      "total_features": 17,
+      "found_keys": {
+        "CCRCA": 17
+      },
+      "samples": {
+        "CCRCA": "DIMBOLI"
+      }
+    },
+    {
+      "input": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\geojson\\parcels\\collective_parcels.geojson",
+      "output": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\geojson\\parcels\\collective_parcels.normalized.geojson",
+      "total_features": 5820,
+      "found_keys": {
+        "source_file": 5820
+      },
+      "samples": {
+        "source_file": "DIMBOLI_LINESTRINGZ"
+      }
+    },
+    {
+      "input": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\geojson\\parcels\\individual_parcels.geojson",
+      "output": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\geojson\\parcels\\individual_parcels.normalized.geojson",
+      "total_features": 28422,
+      "found_keys": {
+        "Nom": 26926,
+        "source_file": 1496
+      },
+      "samples": {
+        "Nom": "SY",
+        "source_file": "TOMBORONKOTO_LINESTRINGZ"
+      }
+    },
+    {
+      "input": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\geojson\\parcels\\unjoined_parcels.geojson",
+      "output": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\geojson\\parcels\\unjoined_parcels.normalized.geojson",
+      "total_features": 7467,
+      "found_keys": {
+        "source_file": 7467
+      },
+      "samples": {
+        "source_file": "SINTHIOU_MALEME_LINESTRINGZ"
+      }
+    }
+  ],
+  "errors": []
+}

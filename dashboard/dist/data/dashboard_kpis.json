@@ -1,0 +1,83 @@
+{
+  "kpi_summary": {
+    "total_parcels": {
+      "value": 38830,
+      "description": "Total number of parcels after duplicate removal",
+      "change": {
+        "value": -4280,
+        "percent": -9.93,
+        "direction": "decrease"
+      }
+    },
+    "individual_parcels": {
+      "value": 28678,
+      "description": "Number of individual parcels joined",
+      "percent_of_total": 73.85
+    },
+    "collective_parcels": {
+      "value": 5869,
+      "description": "Number of collective parcels joined",
+      "percent_of_total": 15.11
+    },
+    "unjoined_parcels": {
+      "value": 7475,
+      "description": "Number of unjoined parcels",
+      "percent_of_total": 19.25
+    },
+    "duplicate_removal_rate": {
+      "value": 9.93,
+      "description": "Overall percentage of duplicates removed",
+      "unit": "%",
+      "breakdown": {
+        "highest": {"commune": "NDOGA_BABACAR", "value": 25.28},
+        "lowest": {"commune": "BALLOU", "value": 1.41},
+        "average": 7.02
+      }
+    },
+    "problematic_parcels": {
+      "value": 211,
+      "description": "Number of parcels with conflicting type (both individual and collective)",
+      "percent_of_total": 0.54
+    },
+    "data_quality": {
+      "value": 90.07,
+      "description": "Overall data quality score (100% - duplicate rate)",
+      "unit": "%"
+    },
+    "processing_efficiency": {
+      "value": 4280,
+      "description": "Total duplicate records eliminated",
+      "unit": "records"
+    }
+  },
+  "top_communes": {
+    "by_individual_parcels": [
+      {"commune": "TOMBORONKOTO", "value": 8235},
+      {"commune": "MISSIRAH", "value": 4216},
+      {"commune": "SINTHIOU_MALEME", "value": 3535},
+      {"commune": "BANDAFASSI", "value": 2735},
+      {"commune": "DIMBOLI", "value": 2401}
+    ],
+    "by_collective_parcels": [
+      {"commune": "BANDAFASSI", "value": 753},
+      {"commune": "NETTEBOULOU", "value": 677},
+      {"commune": "TOMBORONKOTO", "value": 549},
+      {"commune": "FONGOLEMBI", "value": 545},
+      {"commune": "BEMBOU", "value": 414}
+    ],
+    "by_unjoined_parcels": [
+      {"commune": "NETTEBOULOU", "value": 1576},
+      {"commune": "MISSIRAH", "value": 1557},
+      {"commune": "NDOGA_BABACAR", "value": 1197},
+      {"commune": "SINTHIOU_MALEME", "value": 855},
+      {"commune": "GABOU", "value": 683}
+    ],
+    "by_duplicate_rate": [
+      {"commune": "NDOGA_BABACAR", "value": 25.28},
+      {"commune": "TOMBORONKOTO", "value": 15.83},
+      {"commune": "NETTEBOULOU", "value": 9.52},
+      {"commune": "BANDAFASSI", "value": 9.46},
+      {"commune": "FONGOLEMBI", "value": 7.12}
+    ]
+  }
+}

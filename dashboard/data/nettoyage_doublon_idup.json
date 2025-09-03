@@ -1,0 +1,121 @@
+{
+  "summary": {
+    "total_files_processed": 15,
+    "total_features_original": 40590,
+    "total_features_after_cleaning": 39145,
+    "total_features_removed": 1445,
+    "average_reduction_rate": 3.56
+  },
+  "file_details": [
+    {
+      "file": "BALA_LineStringZ",
+      "original_feature_count": 1212,
+      "features_after_cleaning": 1190,
+      "features_removed": 22,
+      "reduction_percent": 1.8,
+      "unique_num_parcel": 1188,
+      "zero_parcels": 1,
+      "text_parcels": 1,
+      "removed_duplicates": [
+        {"num_parcel": "0532010101123", "count": 1},
+        {"num_parcel": "0532010101926", "count": 2},
+        {"num_parcel": "0532010101151", "count": 1},
+        {"num_parcel": "0532010101636", "count": 1},
+        {"num_parcel": "0532010100011", "count": 1},
+        {"num_parcel": "0532010101291", "count": 1},
+        {"num_parcel": "0532010101811", "count": 1},
+        {"num_parcel": "0532010100647", "count": 1},
+        {"num_parcel": "0532010100249", "count": 1},
+        {"num_parcel": "0532010101390", "count": 1},
+        {"num_parcel": "0532010101506", "count": 1},
+        {"num_parcel": "0532010101557", "count": 1},
+        {"num_parcel": "0532010100712", "count": 1},
+        {"num_parcel": "0532010101670", "count": 1},
+        {"num_parcel": "0532010100419", "count": 1},
+        {"num_parcel": "0532010101269", "count": 1},
+        {"num_parcel": "0532010101966", "count": 1},
+        {"num_parcel": "0532010100782", "count": 1},
+        {"num_parcel": "0532010101974", "count": 1},
+        {"num_parcel": "0532010100460", "count": 1},
+        {"num_parcel": "0532010101039", "count": 1}
+      ]
+    },
+    {
+      "file": "BALLOU_LineStringZ",
+      "original_feature_count": 1371,
+      "features_after_cleaning": 1366,
+      "features_removed": 5,
+      "reduction_percent": 0.4,
+      "unique_num_parcel": 637,
+      "zero_parcels": 1,
+      "text_parcels": 2,
+      "removed_duplicates": [
+        {"num_parcel": "0512030102877", "count": 1},
+        {"num_parcel": "0512030103612", "count": 1},
+        {"num_parcel": "0512030103231", "count": 1},
+        {"num_parcel": "0512030103212", "count": 1},
+        {"num_parcel": "0512030103549", "count": 1}
+      ]
+    },
+    {
+      "file": "BANDAFASSI_LineStringZ",
+      "original_feature_count": 3691,
+      "features_after_cleaning": 3506,
+      "features_removed": 185,
+      "reduction_percent": 5.0,
+      "unique_num_parcel": 3457,
+      "zero_parcels": 1,
+      "text_parcels": 14,
+      "sample_removed_duplicates": [
+        {"num_parcel": "1312010102176", "count": 1},
+        {"num_parcel": "1312010100259", "count": 1},
+        {"num_parcel": "1312010102832", "count": 1},
+        {"num_parcel": "1312010100581", "count": 1},
+        {"num_parcel": "1312010104494", "count": 1}
+      ]
+    },
+    {
+      "file": "BEMBOU_LineStringZ",
+      "original_feature_count": 2056,
+      "features_after_cleaning": 1992,
+      "features_removed": 64,
+      "reduction_percent": 3.1,
+      "unique_num_parcel": 1991,
+      "zero_parcels": 0,
+      "text_parcels": 5,
+      "sample_removed_duplicates": [
+        {"num_parcel": "1332010203094", "count": 1},
+        {"num_parcel": "1332010201464", "count": 1},
+        {"num_parcel": "1332010201137", "count": 1},
+        {"num_parcel": "1332010200876", "count": 2},
+        {"num_parcel": "1332010202727", "count": 3}
+      ]
+    },
+    {
+      "file": "DIMBOLI_LineStringZ",
+      "original_feature_count": 3021,
+      "features_after_cleaning": 2950,
+      "features_removed": 71,
+      "reduction_percent": 2.4,
+      "unique_num_parcel": 2850,
+      "zero_parcels": 0,
+      "text_parcels": 2,
+      "sample_removed_duplicates": [
+        {"num_parcel": "1312020100056", "count": 1},
+        {"num_parcel": "1312020103520", "count": 2},
+        {"num_parcel": "1312020100301", "count": 2}
+      ]
+    },
+    {
+      "file": "DINDEFELLO_LineStringZ",
+      "original_feature_count": 1820,
+      "features_after_cleaning": 1766,
+      "features_removed": 54,
+      "reduction_percent": 3.0,
+      "unique_num_parcel": 1765,
+      "zero_parcels": 0,
+      "text_parcels": 2
+    }
+  ],
+  "note": "This is a detailed summary of the duplicate removal process for the first 6 files. The complete process covered 15 files with a total of 1,445 duplicate features removed."
+}

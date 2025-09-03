@@ -1,0 +1,116 @@
+{
+  "files": [
+    {
+      "input": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\geojson\\parcels\\collective_parcels.geojson",
+      "error": "Traceback (most recent call last):\n  File \"c:\\Users\\USER\\Documents\\Applications\\NewEDL\\scripts\\spatial_join_communes.py\", line 174, in main\n    process_parcel_file(p, communes_index, report)\n    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"c:\\Users\\USER\\Documents\\Applications\\NewEDL\\scripts\\spatial_join_communes.py\", line 130, in process_parcel_file\n    if candidates:\n       ^^^^^^^^^^\nValueError: The truth value of an empty array is ambiguous. Use `array.size > 0` to check that an array is not empty.\n"
+    },
+    {
+      "input": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\geojson\\parcels\\collective_parcels.normalized.geojson",
+      "output": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\geojson\\parcels\\collective_parcels.normalized.spatial_commune.geojson",
+      "total": 5820,
+      "assigned": 0
+    },
+    {
+      "input": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\geojson\\parcels\\collective_parcels.normalized.source_commune.geojson",
+      "output": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\geojson\\parcels\\collective_parcels.normalized.source_commune.spatial_commune.geojson",
+      "total": 5820,
+      "assigned": 0
+    },
+    {
+      "input": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\geojson\\parcels\\collective_parcels.normalized.source_commune.spatial_commune.geojson",
+      "output": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\geojson\\parcels\\collective_parcels.normalized.source_commune.spatial_commune.spatial_commune.geojson",
+      "total": 5820,
+      "assigned": 0
+    },
+    {
+      "input": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\geojson\\parcels\\collective_parcels.normalized.spatial_commune.geojson",
+      "output": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\geojson\\parcels\\collective_parcels.normalized.spatial_commune.spatial_commune.geojson",
+      "total": 5820,
+      "assigned": 0
+    },
+    {
+      "input": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\geojson\\parcels\\collective_parcels.source_commune.geojson",
+      "error": "read_error: Expecting value: line 3499 column 3549 (char 55630304)"
+    },
+    {
+      "input": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\geojson\\parcels\\individual_parcels.geojson",
+      "error": "Traceback (most recent call last):\n  File \"c:\\Users\\USER\\Documents\\Applications\\NewEDL\\scripts\\spatial_join_communes.py\", line 174, in main\n    process_parcel_file(p, communes_index, report)\n    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"c:\\Users\\USER\\Documents\\Applications\\NewEDL\\scripts\\spatial_join_communes.py\", line 130, in process_parcel_file\n    if candidates:\n       ^^^^^^^^^^\nValueError: The truth value of an empty array is ambiguous. Use `array.size > 0` to check that an array is not empty.\n"
+    },
+    {
+      "input": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\geojson\\parcels\\individual_parcels.normalized.geojson",
+      "output": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\geojson\\parcels\\individual_parcels.normalized.spatial_commune.geojson",
+      "total": 28422,
+      "assigned": 0
+    },
+    {
+      "input": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\geojson\\parcels\\individual_parcels.normalized.source_commune.geojson",
+      "output": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\geojson\\parcels\\individual_parcels.normalized.source_commune.spatial_commune.geojson",
+      "total": 28422,
+      "assigned": 0
+    },
+    {
+      "input": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\geojson\\parcels\\individual_parcels.normalized.source_commune.spatial_commune.geojson",
+      "output": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\geojson\\parcels\\individual_parcels.normalized.source_commune.spatial_commune.spatial_commune.geojson",
+      "total": 28422,
+      "assigned": 0
+    },
+    {
+      "input": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\geojson\\parcels\\individual_parcels.normalized.spatial_commune.geojson",
+      "output": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\geojson\\parcels\\individual_parcels.normalized.spatial_commune.spatial_commune.geojson",
+      "total": 28422,
+      "assigned": 0
+    },
+    {
+      "input": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\geojson\\parcels\\individual_parcels.source_commune.geojson",
+      "output": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\geojson\\parcels\\individual_parcels.source_commune.spatial_commune.geojson",
+      "total": 28422,
+      "assigned": 0
+    },
+    {
+      "input": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\geojson\\parcels\\individual_parcels.source_commune.spatial_commune.geojson",
+      "output": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\geojson\\parcels\\individual_parcels.source_commune.spatial_commune.spatial_commune.geojson",
+      "total": 28422,
+      "assigned": 0
+    },
+    {
+      "input": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\geojson\\parcels\\unjoined_parcels.geojson",
+      "error": "Traceback (most recent call last):\n  File \"c:\\Users\\USER\\Documents\\Applications\\NewEDL\\scripts\\spatial_join_communes.py\", line 174, in main\n    process_parcel_file(p, communes_index, report)\n    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"c:\\Users\\USER\\Documents\\Applications\\NewEDL\\scripts\\spatial_join_communes.py\", line 130, in process_parcel_file\n    if candidates:\n       ^^^^^^^^^^\nValueError: The truth value of an empty array is ambiguous. Use `array.size > 0` to check that an array is not empty.\n"
+    },
+    {
+      "input": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\geojson\\parcels\\unjoined_parcels.normalized.geojson",
+      "output": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\geojson\\parcels\\unjoined_parcels.normalized.spatial_commune.geojson",
+      "total": 7467,
+      "assigned": 0
+    },
+    {
+      "input": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\geojson\\parcels\\unjoined_parcels.normalized.source_commune.geojson",
+      "output": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\geojson\\parcels\\unjoined_parcels.normalized.source_commune.spatial_commune.geojson",
+      "total": 7467,
+      "assigned": 0
+    },
+    {
+      "input": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\geojson\\parcels\\unjoined_parcels.normalized.source_commune.spatial_commune.geojson",
+      "output": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\geojson\\parcels\\unjoined_parcels.normalized.source_commune.spatial_commune.spatial_commune.geojson",
+      "total": 7467,
+      "assigned": 0
+    },
+    {
+      "input": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\geojson\\parcels\\unjoined_parcels.normalized.spatial_commune.geojson",
+      "output": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\geojson\\parcels\\unjoined_parcels.normalized.spatial_commune.spatial_commune.geojson",
+      "total": 7467,
+      "assigned": 0
+    },
+    {
+      "input": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\geojson\\parcels\\unjoined_parcels.source_commune.geojson",
+      "output": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\geojson\\parcels\\unjoined_parcels.source_commune.spatial_commune.geojson",
+      "total": 7467,
+      "assigned": 0
+    },
+    {
+      "input": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\geojson\\parcels\\unjoined_parcels.source_commune.spatial_commune.geojson",
+      "output": "c:\\Users\\USER\\Documents\\Applications\\NewEDL\\geojson\\parcels\\unjoined_parcels.source_commune.spatial_commune.spatial_commune.geojson",
+      "total": 7467,
+      "assigned": 0
+    }
+  ]
+}

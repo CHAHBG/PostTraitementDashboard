@@ -1,0 +1,19 @@
+{
+  "communes": [
+    {"name": "BALA", "id": 1, "polygon_count": 1190, "individual_parcels": 959, "collective_parcels": 155, "unjoined": 81, "duplicate_rate": 3.62},
+    {"name": "BALLOU", "id": 2, "polygon_count": 1366, "individual_parcels": 358, "collective_parcels": 275, "unjoined": 734, "duplicate_rate": 1.41},
+    {"name": "BANDAFASSI", "id": 3, "polygon_count": 3506, "individual_parcels": 2735, "collective_parcels": 753, "unjoined": 85, "duplicate_rate": 9.46},
+    {"name": "BEMBOU", "id": 4, "polygon_count": 1992, "individual_parcels": 1552, "collective_parcels": 414, "unjoined": 39, "duplicate_rate": 4.37},
+    {"name": "DIMBOLI", "id": 5, "polygon_count": 2950, "individual_parcels": 2401, "collective_parcels": 412, "unjoined": 147, "duplicate_rate": 6.70},
+    {"name": "DINDEFELLO", "id": 6, "polygon_count": 1766, "individual_parcels": 1496, "collective_parcels": 259, "unjoined": 32, "duplicate_rate": 3.90},
+    {"name": "FONGOLEMBI", "id": 7, "polygon_count": 1429, "individual_parcels": 875, "collective_parcels": 545, "unjoined": 22, "duplicate_rate": 7.12},
+    {"name": "GABOU", "id": 8, "polygon_count": 1581, "individual_parcels": 600, "collective_parcels": 298, "unjoined": 683, "duplicate_rate": 2.23},
+    {"name": "KOAR", "id": 9, "polygon_count": 98, "individual_parcels": 58, "collective_parcels": 30, "unjoined": 10, "duplicate_rate": 2.97},
+    {"name": "MISSIRAH", "id": 10, "polygon_count": 6580, "individual_parcels": 4216, "collective_parcels": 909, "unjoined": 1557, "duplicate_rate": 6.98},
+    {"name": "MOUDERY", "id": 11, "polygon_count": 1049, "individual_parcels": 458, "collective_parcels": 336, "unjoined": 259, "duplicate_rate": 1.99},
+    {"name": "NDOGA_BABACAR", "id": 12, "polygon_count": 1272, "individual_parcels": 60, "collective_parcels": 15, "unjoined": 1197, "duplicate_rate": 25.28},
+    {"name": "NETTEBOULOU", "id": 13, "polygon_count": 3272, "individual_parcels": 1140, "collective_parcels": 677, "unjoined": 1576, "duplicate_rate": 9.52},
+    {"name": "SINTHIOU_MALEME", "id": 14, "polygon_count": 4606, "individual_parcels": 3535, "collective_parcels": 242, "unjoined": 855, "duplicate_rate": 2.59},
+    {"name": "TOMBORONKOTO", "id": 15, "polygon_count": 8933, "individual_parcels": 8235, "collective_parcels": 549, "unjoined": 198, "duplicate_rate": 15.83}
+  ]
+}
