@@ -132,6 +132,10 @@ export class ApiService {
    */
   async post(endpoint, data = {}) {
     try {
+      if (this.useDirectFileAccess) {
+        // In static hosting mode we don't have a backend to POST to
+        throw new Error('API POST unavailable in static hosting mode');
+      }
       const response = await fetch(`${this.baseUrl}${endpoint}`, {
         method: 'POST',
         headers: this.defaultHeaders,

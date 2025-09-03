@@ -25,7 +25,8 @@ const directories = [
 const vendorLibs = [
   { src: path.join(sourceDir, 'node_modules', 'leaflet', 'dist'), dest: path.join(distDir, 'lib', 'leaflet') },
   { src: path.join(sourceDir, 'node_modules', 'd3', 'dist'), dest: path.join(distDir, 'lib', 'd3') },
-  { src: path.join(sourceDir, 'node_modules', 'chart.js', 'dist'), dest: path.join(distDir, 'lib', 'chart.js') }
+  { src: path.join(sourceDir, 'node_modules', 'chart.js', 'dist'), dest: path.join(distDir, 'lib', 'chart.js') },
+  { src: path.join(sourceDir, 'node_modules', 'leaflet.markercluster', 'dist'), dest: path.join(distDir, 'lib', 'leaflet.markercluster') }
 ];
 
 // Data and geojson live at project root; copy them explicitly

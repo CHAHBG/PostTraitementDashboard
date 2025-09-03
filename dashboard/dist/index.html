@@ -226,6 +226,23 @@
                 document.head.appendChild(s);
             }
 
+                    // Leaflet.markercluster (plugin) - required for clustering
+                    if (!window.L || !window.L.MarkerClusterGroup) {
+                        var mcCss = document.createElement('link');
+                        mcCss.rel = 'stylesheet';
+                        mcCss.href = 'https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css';
+                        document.head.appendChild(mcCss);
+
+                        var mcCss2 = document.createElement('link');
+                        mcCss2.rel = 'stylesheet';
+                        mcCss2.href = 'https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css';
+                        document.head.appendChild(mcCss2);
+
+                        var mc = document.createElement('script');
+                        mc.src = 'https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js';
+                        document.head.appendChild(mc);
+                    }
+
             // D3
             if (!window.d3) {
                 var s2 = document.createElement('script');
